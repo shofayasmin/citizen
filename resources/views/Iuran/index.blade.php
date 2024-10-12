@@ -10,7 +10,7 @@
         <!-- The above 6 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         
         <!-- Title -->
-        <title>Manage Iuran Data</title>
+        <title>Manage Contributions Data</title>
 
         <!-- Styles -->
         <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
@@ -44,7 +44,7 @@
                                 <nav aria-label="breadcrumb">
 
                                 </nav>
-                                <h3>Iuran</h3>
+                                <h3>Contributions</h3>
                             </div>
                         </div>
                     </div>

@@ -4,20 +4,20 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalCenterTitle">Konfirmasi Hapus Data</h5>
+                <h5 class="modal-title" id="exampleModalCenterTitle">Confirm Delete Data</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <i class="material-icons">close</i>
                 </button>
             </div>
             <div class="modal-body">
 
-                apakah anda yakin ingin menghapus data? <b>{{ $b->contribution_name }}</b></div>
+                Are you sure you want to delete the data? <b>{{ $b->contribution_name }}</b></div>
             <div class="modal-footer">
                 <form action="{{ route('iuran.delete',['id'=> $b->contribution_id]) }}" method="POST">
                     @csrf
                     @method('DELETE')
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="Submit" class="btn btn-primary">Konfirmasi</button>
+                    <button type="Submit" class="btn btn-primary">Confirm</button>
                 </form>
             </div>
         </div>
@@ -30,7 +30,7 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
         <div class="modal-header">
-        <h5 class="modal-title" id="bayar_tambahTitle">Bayar Mingguan</h5>
+        <h5 class="modal-title" id="bayar_tambahTitle">Weekly Payments</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
         </button>
@@ -38,7 +38,7 @@
         <form action="{{ route('iuran.store') }}" method="POST">
             @csrf
             <div class="form-group" style="margin-left: 10px; margin-right: 10px;">
-                <label for="exampleInputEmail1">Nama</label>
+                <label for="exampleInputEmail1">Name</label>
                 <input type="form" name="contribution_name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="12345678912345">
                 @error( 'contribution_name' )
                     <small>{{ $message }}</small>
@@ -52,7 +52,7 @@
                 @enderror
             </div>               
             <div class="form-group" style="margin-left: 10px; margin-right: 10px;">
-                <label for="exampleInputEmail1">Jumlah</label>
+                <label for="exampleInputEmail1">Total</label>
                 <input type="form" name="amount" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="12345678912345">
                 @error( 'amount' )
                     <small>{{ $message }}</small>
@@ -62,7 +62,7 @@
             
                                 
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 <button type="submit" class="btn btn-primary">Submit</button>
             </div>
         </form>
@@ -75,7 +75,7 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
         <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalEditTitle{{ $b->contribution_id }}">Edit Acara</h5>
+        <h5 class="modal-title" id="exampleModalEditTitle{{ $b->contribution_id }}">Edit Event</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
         </button>
@@ -84,7 +84,7 @@
             @csrf
             @method('PUT')
             <div class="form-group" style="margin-left: 10px; margin-right: 10px;">
-                <label for="exampleInputEmail1">Nama</label>
+                <label for="exampleInputEmail1">Name</label>
                 <input type="form" value="{{ $b->contribution_name }}" name="contribution_name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="12345678912345">
                 @error( 'contribution_name' )
                     <small>{{ $message }}</small>
@@ -98,7 +98,7 @@
                 @enderror
             </div>               
             <div class="form-group" style="margin-left: 10px; margin-right: 10px;">
-                <label for="exampleInputEmail1">Jumlah</label>
+                <label for="exampleInputEmail1">Total</label>
                 <input type="form" value="{{ $b->amount }}" name="amount" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="12345678912345">
                 @error( 'amount' )
                     <small>{{ $message }}</small>
@@ -107,7 +107,7 @@
             
                                 
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 <button type="submit" class="btn btn-primary">Submit</button>
             </div>
         </form>

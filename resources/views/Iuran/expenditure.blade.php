@@ -43,11 +43,11 @@
                                 <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb breadcrumb-separator-1">
                                     <li class="breadcrumb-item"><a href="{{ route('dashboard.index') }}">Dashboard</a></li>
-                                    <li class="breadcrumb-item">Keuangan</li>
-                                    <li class="breadcrumb-item active" aria-current="page">Pengeluaran</li>
+                                    <li class="breadcrumb-item">Finance</li>
+                                    <li class="breadcrumb-item active" aria-current="page">Outcome</li>
                                 </ol>
                                 </nav>
-                                <h3>Pengeluaran</h3>
+                                <h3>Outcome</h3>
                             </div>
                         </div>
                     </div>
@@ -74,18 +74,18 @@
                                                             {{ session('delete') }}
                                                         </div>
                                                     @endif
-                                                    <h5 class="card-title">Pengeluaran</h5>
-                                                    <p>Berikut adalah Data Pengeluaran dari RW 003</code>.</p>
+                                                    <h5 class="card-title">Outcome</h5>
+                                                    <p>The following is the Expenditure Data</code>.</p>
                                                     <div class="text-right mb-3">
                                                         <form action="{{ route('iuran.expenditure') }}" method="get" class="d-inline">
                                                             @csrf
                                                             <div class="row mb-3 justify-content-end">
                                                                 <div class="col-sm-3">
-                                                                    <label for="start_date" class="form-label">Rentang Tanggal Mulai: </label>
+                                                                    <label for="start_date" class="form-label">Start Date Range: </label>
                                                                     <input type="date" name="start_date" class="form-control" value="{{ request('start_date') }}">
                                                                 </div>
                                                                 <div class="col-sm-3">
-                                                                    <label for="end_date" class="form-label">Rentang Tanggal Akhir: </label>
+                                                                    <label for="end_date" class="form-label">End Date Range: </label>
                                                                     <input type="date" name="end_date" class="form-control" value="{{ request('end_date') }}">
                                                                 </div>
                                                                 <div class="col-sm-2 d-flex align-items-end">
@@ -94,7 +94,7 @@
                                                             </div>
                                                         </form>
                                                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalTambahExpenditure">
-                                                            Tambah Data 
+                                                            Add Data 
                                                         </button>
                                                     </div>
                                                     <div class="table-responsive">
@@ -102,10 +102,10 @@
                                                             <thead>
                                                                 <tr>
                                                                     <th scope="col">No</th>
-                                                                    <th scope="col">Tanggal</th>
-                                                                    <th scope="col">Nama Pengeluaran</th>
-                                                                    <th scope="col">Jumlah</th>
-                                                                    <th scope="col">Deskripsi</th>
+                                                                    <th scope="col">Date</th>
+                                                                    <th scope="col">Outcome Name</th>
+                                                                    <th scope="col">Total</th>
+                                                                    <th scope="col">Description</th>
                                                                 </tr>
                                                             </thead>
                                                             <tbody>
@@ -125,7 +125,7 @@
                                                                             <i class="fas fa-pen"></i> Edit
                                                                         </button>
                                                                         <button type="button" data-toggle="modal" data-target="#exampleModalHapus{{ $d->expenditure_id }}" class="btn btn-danger">
-                                                                            <i class="fas fa-trash-alt"></i> Hapus
+                                                                            <i class="fas fa-trash-alt"></i> Delete
                                                                         </button>
                                                                     </td>
                                                                 </tr>
