@@ -1,0 +1,47 @@
+
+
+<div class="lime-header">
+    <nav class="navbar navbar-expand-lg">
+        <section class="material-design-hamburger navigation-toggle">
+            <a href="javascript:void(0)" class="button-collapse material-design-hamburger__icon">
+                <span class="material-design-hamburger__layer"></span>
+            </a>
+        </section>
+        <a class="navbar-brand" href="
+            {{-- @if(Auth::user()->role == 'rw') --}}
+                {{ route('dashboard.index') }}
+            {{-- @elseif(Auth::user()->role == 'citizen')
+                {{ route('DashboardWarga.index') }}
+            @else
+                {{ route('home') }}
+            @endif --}}
+        ">C-Hub</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="material-icons">keyboard_arrow_down</i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <form class="form-inline my-2 my-lg-0 search">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search for projects, apps, pages..." aria-label="Search">
+            </form>
+            <ul class="navbar-nav ml-auto">
+                {{-- <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle theme-settings-link" href="#">
+                        <i class="material-icons">layers</i>
+                    </a>
+                </li> --}}
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="material-icons">more_vert</i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li><a href="{{ route('account') }}" class="dropdown-item">Account</a></li>
+                        <li class="divider"></li>
+                        <li><a class="dropdown-item" href="{{ route('logout') }}">Log Out</a></li>
+
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
