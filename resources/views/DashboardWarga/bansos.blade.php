@@ -20,10 +20,10 @@
                 </div>
                 <div class="card-body">
                     <h5 class="card-title">{{ $d->judul }}</h5>
-                    <p class="card-text">Jenis Bansos: {{ $d->jenis_bansos }}</p>
-                    <p class="card-text">Periode Bansos: {{ $d->periode_bansos }} Hari</p>
-                    <p class="card-text">Jumlah Bansos: {{ $d->jumlah_bansos }}</p>
-                    <p class="card-text">Tanggal penyaluran: {{ $d->tanggal_penyaluran }}</p>
+                    <p class="card-text">Type of social donation: {{ $d->jenis_bansos }}</p>
+                    <p class="card-text">social donation periode : {{ $d->periode_bansos }} day</p>
+                    <p class="card-text">total of social donation: {{ $d->jumlah_bansos }}</p>
+                    <p class="card-text">date of distribution: {{ $d->tanggal_penyaluran }}</p>
                 </div>
             </div>
         @endforeach

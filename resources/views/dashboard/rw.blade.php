@@ -62,7 +62,7 @@
                                         <div class="info-text col-md-6">
                                             {{-- step ini bisa dipanggil dengan database --}}
                                             <h5 class="card-title">Welcome back {{ $user->username }}</h5> 
-                                            <p>Mengenal Lebih Jauh dengan Dashboard, Berikut adalah beberapa cara untuk memulai.</p>
+                                            <p>Get to know more about the Dashboard. Here are some ways to get started.</p>
                                             <ul>
                                                 <li>Check some stats for your website bellow</li>
                                                 <li>Sync content to other devices</li>
@@ -81,9 +81,9 @@
                         <div class="col-md-3">
                             <div class="card stat-card">
                                 <div class="card-body">
-                                    <h5 class="card-title">Rumah</h5>
+                                    <h5 class="card-title">House</h5>
                                     <h2 class="float-right">{{ $totalRumah }}</h2>
-                                    <p>Jumlah Rumah</p>
+                                    <p>total of house</p>
                                     
                                 </div>
                             </div>

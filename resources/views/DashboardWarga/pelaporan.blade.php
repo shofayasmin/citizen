@@ -32,17 +32,17 @@
                                             <input type="hidden" name="pengirim"
                                                 value="{{ auth()->user()->user_nik }}">
                                             <div class="form-group">
-                                                <label for="exampleFormControlInput1">Judul Laporan</label>
+                                                <label for="exampleFormControlInput1">Report issue</label>
                                                 <input type="text" name="judul" class="form-control"
                                                     id="exampleFormControlInput1">
                                             </div>
                                             <div class="form-group">
-                                                <label for="exampleFormControlTextarea1">Deskripsi Pengaduan</label>
+                                                <label for="exampleFormControlTextarea1">Issue description</label>
                                                 <textarea class="form-control" name="deskripsi" id="exampleFormControlTextarea1" rows="3"></textarea>
                                             </div>
                                     </div>
                                     <div class="form-group ml-4">
-                                        <label for="image">Upload Gambar</label>
+                                        <label for="image">Upload image</label>
                                         <input type="file" class="form-control-file" id="image" name="gambar">
                                     </div>
                                     <button style="margin-left: 85%; margin-top:50px" name="gambar" type="submit"
