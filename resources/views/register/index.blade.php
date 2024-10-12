@@ -49,7 +49,7 @@
                                         required value="{{ old('username') }}">
                                 </div>
                                 <div class="form-group @error('user_nik') is-invalid @enderror">
-                                    <label for="user_nik">NIK</label>
+                                    <label for="user_nik">ID Number</label>
                                     <input type="number" name="user_nik" class="form-control" autofocus required
                                         value="{{ old('user_nik') }}">
                                 </div>
