@@ -11,7 +11,7 @@
     <!-- The above 6 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title -->
-    <title>Acara View</title>
+    <title>View Event</title>
 
     <!-- Styles -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap"
@@ -48,11 +48,11 @@
                         <div class="page-title">
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb breadcrumb-separator-1">
-                                    <li class="breadcrumb-item"><a href="#">Acara</a></li>
+                                    <li class="breadcrumb-item"><a href="#">Event</a></li>
                                     <li class="breadcrumb-item active" aria-current="page">View</li>
                                 </ol>
                             </nav>
-                            <h3>View Acara</h3>
+                            <h3>View Event</h3>
 
                         </div>
                     </div>
