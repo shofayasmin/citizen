@@ -54,7 +54,7 @@
                                 </ol>
 
                             </nav>
-                            <h3>Akun User</h3>
+                            <h3>User Account</h3>
 
                         </div>
                     </div>
@@ -68,8 +68,8 @@
                                     <div class="col-xl">
                                         <div class="card">
                                             <div class="card-body">
-                                                <h5 class="card-title">Data User</h5>
-                                                <p>Berikut adalah Data Data User dari RW 003</code>.</p>
+                                                <h5 class="card-title">User Data</h5>
+                                                <p>The following is User Data</code>.</p>
                                                 @if (session('success'))
                                                     <div class="alert alert-success alert-dismissible fade show"
                                                         role="alert">
@@ -97,7 +97,7 @@
                                                 <div class="text-right mb-3">
                                                     <button type="button" class="btn btn-primary" data-toggle="modal"
                                                         data-target="#user_tambah">
-                                                        Tambah User
+                                                        Add User
                                                     </button>
                                                 </div>
                                                 <div class="table-responsive">
@@ -107,8 +107,8 @@
                                                             <tr>
                                                                 <th scope="col">No</th>
                                                                 <th scope="col">Username</th>
-                                                                <th scope="col">Nama Lengkap</th>
-                                                                <th scope="col">NIK</th>
+                                                                <th scope="col">Full Name</th>
+                                                                <th scope="col">ID Number</th>
                                                                 <th scope="col">Role</th>
                                                             </tr>
                                                         </thead>
@@ -129,7 +129,7 @@
                                                                         <span data-toggle="modal"
                                                                             data-target="#exampleModalHapus{{ $u->id }}"
                                                                             class="btn btn-danger"><i
-                                                                                class="fas fa-trash-alt"> Hapus</i></span>
+                                                                                class="fas fa-trash-alt"> Delete</i></span>
                                                                     </td>
                                                                 </tr>
 

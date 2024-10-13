@@ -10,7 +10,7 @@
         <!-- The above 6 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         
         <!-- Title -->
-        <title>Manage Data Pemasukan</title>
+        <title>Manage Income Data</title>
 
         <!-- Styles -->
         <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
@@ -44,11 +44,11 @@
                                 <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb breadcrumb-separator-1">
                                     <li class="breadcrumb-item active"><a href="{{ route('dashboard.index') }}">Dashboard</a></li>
-                                    <li class="breadcrumb-item">Keuangan</li>
-                                    <li class="breadcrumb-item">Pemasukan</li>
+                                    <li class="breadcrumb-item">Finance</li>
+                                    <li class="breadcrumb-item">Income</li>
                                 </ol>
                                 </nav>
-                                <h3>Pemasukan</h3>
+                                <h3>Income</h3>
                             
                             </div>
                         </div>
@@ -76,28 +76,28 @@
                                                             {{ session('delete') }}
                                                         </div>
                                                     @endif
-                                                    <h5 class="card-title">Pemasukan</h5>
-                                                    <p>Berikut adalah Data Pemasukan dari RW 003</code>.</p> 
+                                                    <h5 class="card-title">Income</h5>
+                                                    <p>The following is the Income Data</code>.</p> 
                                                     <div class="text-right mb-3">
                                                         <form action="{{ route('iuran.income') }}" method="get" class="d-inline">
                                                             @csrf
                                                             <div class="row mb-3 justify-content-end">
                                                                 <div class="col-sm-3">
-                                                                    <label for="income_type" class="form-label">Tipe Pemasukan: </label>
+                                                                    <label for="income_type" class="form-label">Income Type: </label>
                                                                     <select name="income_type" class="form-select form-select-sm" >
-                                                                        <option value="">Semua</option>
-                                                                        <option value="Iuran Warga" {{ isset($_GET['income_type']) && $_GET['income_type'] == 'Iuran Warga' ? 'selected' : '' }}>Iuran Warga</option>
-                                                                        <option value="Sumbangan" {{ isset($_GET['income_type']) && $_GET['income_type'] == 'Sumbangan' ? 'selected' : '' }}>Sumbangan</option>
-                                                                        <option value="Usaha RW" {{ isset($_GET['income_type']) && $_GET['income_type'] == 'Usaha RW' ? 'selected' : '' }}>Usaha RW</option>
-                                                                        <option value="Bantuan Pemerintah" {{ isset($_GET['income_type']) && $_GET['income_type'] == 'Bantuan Pemerintah' ? 'selected' : '' }}>Bantuan Pemerintah</option>
+                                                                        <option value="">All</option>
+                                                                        <option value="Iuran Warga" {{ isset($_GET['income_type']) && $_GET['income_type'] == 'Iuran Warga' ? 'selected' : '' }}>Citizen's Fee</option>
+                                                                        <option value="Sumbangan" {{ isset($_GET['income_type']) && $_GET['income_type'] == 'Sumbangan' ? 'selected' : '' }}>Donation</option>
+                                                                        <option value="Usaha RW" {{ isset($_GET['income_type']) && $_GET['income_type'] == 'Usaha RW' ? 'selected' : '' }}>Comunity Business</option>
+                                                                        <option value="Bantuan Pemerintah" {{ isset($_GET['income_type']) && $_GET['income_type'] == 'Bantuan Pemerintah' ? 'selected' : '' }}>Government Support</option>
                                                                     </select>
                                                                 </div>
                                                                 <div class="col-sm-3">
-                                                                    <label for="start_date" class="form-label">Rentang Tanggal Mulai: </label>
+                                                                    <label for="start_date" class="form-label">Start Date Range: </label>
                                                                     <input type="date" name="start_date" class="form-control" value="{{ request('start_date') }}">
                                                                 </div>
                                                                 <div class="col-sm-3">
-                                                                    <label for="end_date" class="form-label">Rentang Tanggal Akhir: </label>
+                                                                    <label for="end_date" class="form-label">End Date Range: </label>
                                                                     <input type="date" name="end_date" class="form-control" value="{{ request('end_date') }}">
                                                                 </div>
                                                                 <div class="col-sm-2 d-flex align-items-end">
@@ -106,7 +106,7 @@
                                                             </div>
                                                         </form>
                                                         <button type="button" class="btn btn-primary d-inline" data-toggle="modal" data-target="#exampleModalTambahIncome">
-                                                            Tambah Data
+                                                            Add Data
                                                         </button>
                                                     </div>
                                                     <div class="table-responsive">
@@ -114,10 +114,10 @@
                                                             <thead>
                                                                 <tr>
                                                                     <th scope="col">No</th>
-                                                                    <th scope="col">Tanggal</th>
-                                                                    <th scope="col">Nama Pemasukan</th>
-                                                                    <th scope="col">Tipe Pemasukan</th>
-                                                                    <th scope="col">Deskripsi</th>
+                                                                    <th scope="col">Date</th>
+                                                                    <th scope="col">Income Name</th>
+                                                                    <th scope="col">Income Type</th>
+                                                                    <th scope="col">Description</th>
                                                                     <th scope="col">Inflow</th>
                                                                 </tr>
                                                             </thead>

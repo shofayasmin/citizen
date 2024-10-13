@@ -52,7 +52,7 @@
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb breadcrumb-separator-1">
                                     <li class="breadcrumb-item"><a href="#">Report</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Create a Report</li>
+                                    <li class="breadcrumb-item active" aria-current="page">Create Report</li>
                                 </ol>
                             </nav>
                             <h3>Report Form</h3>
@@ -80,7 +80,7 @@
 
                                                     @canany(['rw', 'rt', 'sekretaris'])
                                                     <div class="form-group">
-                                                        <label for="exampleFormControlInput1">Submitter</label>
+                                                        <label for="exampleFormControlInput1">Pengirim</label>
         
                                                         <select name="pengirim" id="exampleFormControlInput1" class="form-control">
                                                             @foreach ($warga as $w)
@@ -95,12 +95,13 @@
                                                     <input type="hidden" name="pengirim" value="{{ auth()->user()->user_nik }}">
                                                     @endcan
                                                     <div class="form-group">
-                                                        <label for="exampleFormControlInput1">Report Issue</label>
+                                                        <label for="exampleFormControlInput1">Judul Laporan</label>
                                                         <input type="text" name="judul" class="form-control"
                                                             id="exampleFormControlInput1">
                                                     </div>
                                                     <div class="form-group">
-                                                        <label for="exampleFormControlTextarea1">Report Description</label>
+                                                        <label for="exampleFormControlTextarea1">Deskripsi
+                                                            Pengaduan</label>
                                                         <textarea class="form-control" name="deskripsi" id="exampleFormControlTextarea1" rows="3"></textarea>
                                                     </div>
                                                     {{-- <div class="card-body">
@@ -111,7 +112,7 @@
                                                         </div> --}}
                                             </div>
                                             <div class="form-group ml-4">
-                                                <label for="image">Upload an Image</label>
+                                                <label for="image">Upload Gambar</label>
                                                 <input type="file" class="form-control-file" id="image"
                                                     name="gambar">
                                             </div>

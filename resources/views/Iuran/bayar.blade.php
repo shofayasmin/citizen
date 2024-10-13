@@ -46,13 +46,13 @@
                                 
                                 <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb breadcrumb-separator-1">
-                                    <li class="breadcrumb-item"><a href="#">Keuangan</a></li>
+                                    <li class="breadcrumb-item"><a href="#">Finance</a></li>
                                     <li class="breadcrumb-item active" aria-current="page">#</li>
                                     
                                 </ol>
                                 
                                 </nav>
-                                <h3>Pembayar</h3>
+                                <h3>Payment</h3>
 
                             </div>
                         </div>
@@ -66,11 +66,11 @@
                                         <div class="col-xl">
                                             <div class="card">
                                                 <div class="card-body">
-                                                    <h5 class="card-title">Data Pembayar</h5>
-                                                    <p>Berikut adalah Data Bayaran dari RW 003</code>.</p>
+                                                    <h5 class="card-title">Payment Data</h5>
+                                                    <p>The following is the payment data</code>.</p>
                                                     <div class="text-right mb-3">
                                                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#bayar_tambah">
-                                                            Tambah Data Bayaran
+                                                            Add Payment Data
                                                         </button>
                                                     </div>
                                                     <div class="table-responsive">
@@ -79,9 +79,9 @@
                                                                 
                                                                 <tr>
                                                                     <th scope="col">No</th>
-                                                                    <th scope="col">Nama</th>
-                                                                    <th scope="col">Status Pembayaran</th>
-                                                                    <th scope="col">Jumlah</th>
+                                                                    <th scope="col">Name</th>
+                                                                    <th scope="col">Payment Status</th>
+                                                                    <th scope="col">Total</th>
                                                                 </tr>
                                                             </thead>
                                                             <tbody>
@@ -115,7 +115,7 @@
                                                             </tbody>
                                                             
                                                         </table>
-                                                        <a href="{{ route('citizen.index') }}"> <- Kembali</a>
+                                                        <a href="{{ route('citizen.index') }}"> <- Back</a>
                                                     </div>      
                                                 </div>
                                             </div>

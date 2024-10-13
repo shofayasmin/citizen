@@ -9,7 +9,6 @@
         <meta name="keywords" content="admin,dashboard">
         <meta name="author" content="stacks">
         <!-- The above 6 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-        
         <!-- Title -->
         <title>Manage Citizen Data</title>
 
@@ -97,11 +96,11 @@
                             <div class="page-title">
                                 <nav aria-label="breadcrumb">
                                   <ol class="breadcrumb breadcrumb-separator-1">
-                                    <li class="breadcrumb-item"><a href="#">Acara</a></li>
+                                    <li class="breadcrumb-item"><a href="#">Event</a></li>
                                     <li class="breadcrumb-item active" aria-current="page">Manage</li>
                                   </ol>
                                 </nav>
-                                <h3>Acara</h3>
+                                <h3>Event</h3>
                                 
                             </div>
                         </div>
@@ -114,11 +113,11 @@
                                         <div class="col-xl">
                                             <div class="card">
                                                 <div class="card-body">
-                                                    <h5 class="card-title">Data ACARA</h5>
-                                                    <p>Berikut adalah Data Data ACARA dari RW 003</code>.</p>
+                                                    <h5 class="card-title">EVENT Data</h5>
+                                                    <p>The following is the EVENTS Data</code>.</p>
                                                     <div class="text-right mb-3">
                                                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalTambah">
-                                                            Tambah Acara
+                                                            Add Event
                                                         </button>
                                                     </div>
                                                     <div class="table-responsive">
@@ -127,9 +126,9 @@
                                                                 
                                                                 <tr>
                                                                     <th scope="col">No</th>
-                                                                    <th scope="col">Judul</th>
-                                                                    <th scope="col">Deskripsi</th>
-                                                                    <th scope="col">Tipe Acara</th>
+                                                                    <th scope="col">Title</th>
+                                                                    <th scope="col">Description</th>
+                                                                    <th scope="col">Event Type</th>
                                                                     
                                                                     
                                                                 </tr>
@@ -169,7 +168,7 @@
                             </div>
                         </div>
                     </div>
-                    <a href="{{ route('citizen.index') }}"> <- Kembali</a>
+                    <a href="{{ route('citizen.index') }}"> <- Back</a>
 
                     
             
