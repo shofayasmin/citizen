@@ -78,7 +78,7 @@
                 <div class="container">
                     <div class="hero-inner">
 						<div class="hero-copy">
-	                        <h1 class="hero-title mt-0">Landing template for Sistem Informasi RW</h1>
+	                        <h1 class="hero-title mt-0">Landing template for Neighborhood Information System</h1>
 	                        <p class="hero-paragraph">Landing Page Bekerja di Semua Device, Jadi pengguna tidak usah khawatir, Dan dapatkan hasil yang indah selamanya</p>
 							<div class="hero-form field field-grouped">
 								{{-- <div class="control control-expanded">
@@ -297,8 +297,8 @@
                     <div class="features-inner section-inner">
                         <div class="features-header text-center">
                             <div class="container-sm">
-                                <h2 class="section-title mt-0">Citizen Hub</h2>
-                                <p class="section-paragraph">Web C-Hub Juga memiliki beberapa keunggulan dibanding web lain</p>
+                                <h2 class="section-title mt-0">CitizenSide</h2>
+                                <p class="section-paragraph">Web CitizenSide Also has some advantages over the rest of the web</p>
                             </div>
                         </div>
 						<div class="features-wrap">
@@ -312,7 +312,7 @@
 										    </g>
 										</svg>
                                     </div>
-                                    <h4 class="feature-title h3-mobile mb-8">Antarmuka Pengguna yang Ramah</h4>
+                                    <h4 class="feature-title h3-mobile mb-8">Friendly User Interface</h4>
                                     <p class="text-sm">Website ini memiliki antarmuka yang sangat ramah pengguna, dengan navigasi yang intuitif dan desain yang bersih.</p>
                                 </div>
                             </div>

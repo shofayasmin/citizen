@@ -43,12 +43,12 @@
                         <div class="col-md-12">
                             <div class="page-title">
                                 <nav aria-label="breadcrumb">
-                                  <ol class="breadcrumb breadcrumb-separator-1">
-                                    <li class="breadcrumb-item"><a href="#">Kependudukan</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Organisasi</li>
-                                  </ol>
+                                <ol class="breadcrumb breadcrumb-separator-1">
+                                <li class="breadcrumb-item"><a href="#">Citizen</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Organization</li>
+                                </ol>
                                 </nav>
-                                <h3>Data Organisasi</h3>
+                                <h3>Organization Data </h3>
                                 
                             </div>
                         </div>
@@ -76,11 +76,11 @@
                                                             {{ session('delete') }}
                                                         </div>
                                                     @endif
-                                                    <h5 class="card-title">Data Organisasi</h5>
-                                                    <p>Berikut adalah Data Organisasi dari RW 003</code>.</p>
+                                                    <h5 class="card-title">Organization Data </h5>
+                                                    <p>Here is the Organizational Data of RW 003</code>.</p>
                                                     <div class="text-right mb-3">
                                                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#organisasi_tambah">
-                                                            Tambah Data
+                                                            Add Data
                                                         </button>
                                                     </div>
                                                     <div class="table-responsive">
@@ -88,13 +88,10 @@
                                                             <thead>
                                                                 <tr>
                                                                     <th scope="col">No</th>
-                                                                    <th scope="col">Nama Organisasi</th>
-                                                                    <th scope="col">Ketua</th>
-                                                                    <th scope="col">Wakil</th>
-                                                                    <th scope="col">Jumlah Anggota</th>
-                                                                    
-                                                                    
-
+                                                                    <th scope="col">Organization Name</th>
+                                                                    <th scope="col">Organization Leader</th>
+                                                                    <th scope="col">Organization Vice Head</th>
+                                                                    <th scope="col">Total number of members</th> 
                                                                 </tr>
                                                             </thead>
                                                             <tbody>
@@ -119,7 +116,7 @@
 
                                                                 @endforeach
                                                                 
-                                                               
+
                                                             </tbody>
                                                         </table>
                                                         <nav aria-label="Page navigation example">
@@ -164,7 +161,7 @@
                                                                     </li>
                                                                 @endif
                                                             </ul>
-                                                        </nav>
+                                                        </nav>
                                                     </div>      
                                                 </div>
                                             </div>

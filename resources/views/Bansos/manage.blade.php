@@ -46,10 +46,10 @@
                                 <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb breadcrumb-separator-1">
                                     <li class="breadcrumb-item"><a href="#">Bansos</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Manage Bansos</li>
+                                    <li class="breadcrumb-item active" aria-current="page">Manage Social donation</li>
                                 </ol>
                                 </nav>
-                                <h3>Manage Bansos</h3>
+                                <h3>Manage Social Donation</h3>
                                 
                             </div>
                         </div>
@@ -64,11 +64,11 @@
                                             <div class="card">
                                                 <div class="card-body">
                                                     
-                                                    <h4 class="mb-0">Data Bansos</h4>
-                                                    <p>Berikut adalah Data Data Bansos dari RW 003</code>.</p>
+                                                    <h4 class="mb-0">Social donation Data</h4>
+                                                    <p>The following is social donation data of neighborhood 003</code>.</p>
                                                     <div class="text-right mb-3">
                                                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#bansos_tambah">
-                                                            Tambah Data Bansos
+                                                            Add social donation data
                                                         </button>
                                                     </div>
 
@@ -76,11 +76,11 @@
                                                         <table class="table">
                                                             <thead>
                                                                 <tr>
-                                                                    <th scope="col">No</th>
-                                                                    <th scope="col">Jenis Bansos</th>
-                                                                    <th scope="col">Periode Bansos</th>
-                                                                    <th scope="col">Tanggal Penyaluran</th>
-                                                                    <th scope="col">Penerima</th>
+                                                                    <th scope="col">Number</th>
+                                                                    <th scope="col">Type of social donation</th>
+                                                                    <th scope="col">Social donation periode</th>
+                                                                    <th scope="col">Distribution date</th>
+                                                                    <th scope="col">Recipient</th>
                                                                 </tr>
                                                             </thead>
                                                             <tbody>
@@ -153,16 +153,16 @@
                                                         <div class="modal-dialog modal-xl" role="document">
                                                             <div class="modal-content">
                                                                 <div class="modal-header">
-                                                                    <h5 class="modal-title" id="detailModalLabel{{ $key }}">Detail Bansos</h5>
+                                                                    <h5 class="modal-title" id="detailModalLabel{{ $key }}">social donation detail</h5>
                                                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                                         <span aria-hidden="true">&times;</span>
                                                                     </button>
                                                                 </div>
                                                                 <div class="modal-body">
-                                                                    <p>Jenis Bansos: {{ $b->jenis_bansos }}</p>
-                                                                    <p>Periode Bansos: {{ $b->periode_bansos }} Hari</p>
-                                                                    <p>Tanggal Penyaluran: {{ $b->tanggal_penyaluran }}</p>
-                                                                    <p>Penerima Bansos:</p>
+                                                                    <p>Type of social donation: {{ $b->jenis_bansos }}</p>
+                                                                    <p>Social donation Periode: {{ $b->periode_bansos }} Hari</p>
+                                                                    <p>Distribution date: {{ $b->tanggal_penyaluran }}</p>
+                                                                    <p>Social donation recipient:</p>
                                                                     <ul>
                                                                         @php
                                                                             $rankCounter = 1;
@@ -188,14 +188,14 @@
                                                                 <form action="" method="POST">
                                                                     @csrf
                                                                     <div class="form-group mt-3" style="margin-left: 10px; margin-right: 10px;">
-                                                                        <label for="exampleInputEmail1">Jenis Bansos</label>
+                                                                        <label for="exampleInputEmail1">Type of donation </label>
                                                                         <input type="form" name="no_kk" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Jenis Bansos">
                                                                         @error( 'no_kk' )
                                                                             <small>{{ $message }}</small>
                                                                         @enderror
                                                                     </div>
                                                                     <div class="form-group" style="margin-left: 10px; margin-right: 10px;">
-                                                                        <label for="exampleInputEmail1">Periode Bansos</label>
+                                                                        <label for="exampleInputEmail1">Social donation periode</label>
                                                                         <input type="form" name="no_kk" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Periode Bansos">
                                                                         @error( 'no_kk' )
                                                                             <small>{{ $message }}</small>
@@ -203,7 +203,7 @@
                                                         
                                                                     
                                                                     <div class="form-group" style="margin-left: 10px; margin-right: 10px;">
-                                                                        <label for="exampleInputEmail1">Tanggal Penyaluran</label>
+                                                                        <label for="exampleInputEmail1">Distribution date</label>
                                                                         <input type="form" name="no_kk" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Dalam bentuk tahun">
                                                                         @error( 'no_kk' )
                                                                             <small>{{ $message }}</small>
@@ -212,7 +212,7 @@
                                                                                                 
                                                                                         
                                                                     <div class="modal-footer">
-                                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+                                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                                                                         <button type="submit" class="btn btn-primary">Submit</button>
                                                                     </div>
                                                                 </form>

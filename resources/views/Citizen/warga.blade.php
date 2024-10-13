@@ -43,11 +43,11 @@
                         <div class="col-md-12">
                             <div class="page-title">
                                 <nav aria-label="breadcrumb">
-                                  <ol class="breadcrumb breadcrumb-separator-1">
-                                    <li class="breadcrumb-item"><a href="#">citizenship</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Citizen</li>
-                                    
-                                  </ol>
+                                <ol class="breadcrumb breadcrumb-separator-1">
+                                <li class="breadcrumb-item"><a href="#">citizenship</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Citizen</li>
+                                
+                                </ol>
                                 </nav>
                                 <h3>Forms</h3>
                                 
@@ -81,7 +81,7 @@
                                                     <p>These are the data of neighborhood 003</code>.</p>
                                                     <div class="text-right mb-3">
                                                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#warga_tambah">
-                                                            add citizen data
+                                                            Add Data
                                                         </button>
                                                     </div>
                                                     <div class="table-responsive">
@@ -101,8 +101,7 @@
                                                                     <th scope="col">Occupance/th>
                                                                     <th scope="col">Nationality</th>
                                                                     <th scope="col">Current Address</th>
-                                                                    
-                                                                   
+                                                                
                                                                 </tr>
                                                             </thead>
                                                             <tbody>
@@ -134,7 +133,6 @@
                                                                 @include('Citizen.modal_warga')
 
                                                                 @endforeach
-                                                               
                                                             </tbody>
                                                         </table>
                                                         <nav aria-label="Page navigation example">
@@ -179,7 +177,7 @@
                                                                     </li>
                                                                 @endif
                                                             </ul>
-                                                        </nav>
+                                                        </nav>
                                                     </div>      
                                                 </div>
                                             </div>

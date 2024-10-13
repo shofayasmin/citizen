@@ -93,7 +93,7 @@
                                 <div class="card-body">
                                     <h5 class="card-title">KK</h5>
                                     <h2 class="float-right">{{ $totalKk }}</h2>
-                                    <p>Jumlah KK</p>
+                                    <p>Number of family cards</p>
                                     
                                 </div>
                             </div>
@@ -101,9 +101,9 @@
                         <div class="col-md-3">
                             <div class="card stat-card">
                                 <div class="card-body">
-                                    <h5 class="card-title">Warga</h5>
+                                    <h5 class="card-title">Citizen</h5>
                                     <h2 class="float-right">{{ $totalWarga }}</h2>
-                                    <p>Total Warga</p>
+                                    <p>Total Citizens</p>
                                     
                                 </div>
                             </div>
@@ -114,27 +114,27 @@
                         <div class="col-md-3">
                             <div class="card stat-card">
                                 <div class="card-body">
-                                    <h5 class="card-title">Acara</h5>
+                                    <h5 class="card-title">Event</h5>
                                     <h2 class="float-right">{{ $totalAcara }}</h2>
-                                    <a class="btn btn-link" href="{{ route('acara.view') }}">Total Acara</a >
+                                    <a class="btn btn-link" href="{{ route('acara.view') }}">Total Events</a >
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="card stat-card">
                                 <div class="card-body">
-                                    <h5 class="card-title">Bansos</h5>
+                                    <h5 class="card-title">Social Donation</h5>
                                     <h2 class="float-right">{{ $totalBansos }}</h2>
-                                    <a class="btn btn-link" href="{{ route('bansos.informasi') }}">Total Bansos</a >
+                                    <a class="btn btn-link" href="{{ route('bansos.informasi') }}">Total Social Donations</a >
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="card stat-card">
                                 <div class="card-body">
-                                    <h5 class="card-title">Laporan</h5>
+                                    <h5 class="card-title">Report</h5>
                                     <h2 class="float-right">{{ $totalLaporan }}</h2>
-                                    <a class="btn btn-link" href="{{ route('laporan.view') }}">Total Laporan</a >
+                                    <a class="btn btn-link" href="{{ route('laporan.view') }}">Total Reports</a >
                                 </div>
                             </div>
                         </div>
@@ -143,9 +143,9 @@
                         <div class="col-md-3">
                             <div class="card stat-card">
                                 <div class="card-body">
-                                    <h5 class="card-title">Umkm</h5>
+                                    <h5 class="card-title">MSME</h5>
                                     <h2 class="float-right">{{ $totalUmkm }}</h2>
-                                    <a class="btn btn-link" href="{{ route('umkm.view') }}">Total UMKM</a >
+                                    <a class="btn btn-link" href="{{ route('umkm.view') }}">Total MSMEs</a >
                                 </div>
                             </div>
                         </div>
@@ -163,7 +163,7 @@
                                             <thead>
                                                 <tr>
                                                     <th scope="col">No</th>
-                                                    <th scope="col">Judul Laporan</th>
+                                                    <th scope="col">Report Issue</th>
                                                     <th scope="col">Status</th>
                                                 </tr>
                                             </thead>
@@ -176,7 +176,7 @@
                                                     <td>
                                                         @if($l->status == 'Selesai')
                                                         <span class="badge badge-success">{{ $l->status }}</span>
-                                                        @elseif($l->status == 'Belum Selesai')
+                                                        @elseif($l->status == 'Not Yet Finished')
                                                         <a href="{{ route('laporan.view') }}" class="badge badge-danger">{{ $l->status }}</a>
                                                         @endif
                                                     </td>
@@ -193,7 +193,7 @@
                         <div class="col-md-4">
                             <div class="card">
                                 <div class="card-body">
-                                    <h5 class="card-title">List Pengirim Laporan</h5>
+                                    <h5 class="card-title">List Submitter</h5>
                                     <div class="social-media-list" style="max-height: 300px; overflow-y: auto;">
                                         @foreach ($pelapor as $p)
                                         <div class="social-media-item">
@@ -242,7 +242,7 @@
                         <div class="col-md-12">
                             <div class="card">
                                 <div class="card-body">
-                                    <h5 class="card-title">Grafik Keuangan</h5>
+                                    <h5 class="card-title">Financial Chart</h5>
                                     <div id="apex10"></div>
                                 </div>
                             </div>
@@ -253,25 +253,25 @@
                             <div class="col-md-12">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h5 class="card-title">Usia yang Kerja dan Non Kerja</h5>
+                                        <h5 class="card-title">Working and Non-working Age</h5>
                                         <div class="popular-products">
                                             <canvas id="statusUsiaChart">Your browser does not support the canvas element.</canvas>
                                             <div class="popular-product-list">
                                                 <ul class="list-unstyled">
                                                     <li>
-                                                        <span>Usia Produktif Bekerja</span>
+                                                        <span>Working Productive Age</span>
                                                         <span class="badge badge-success">{{ number_format(($pie['kerja_produktif']/$total_warga)*100, 2) }}%</span>
                                                     </li>
                                                     <li>
-                                                        <span>Usia Non Produktif Bekerja</span>
+                                                        <span>Non-Productive Working Age</span>
                                                         <span class="badge badge-warning">{{ number_format(($pie['kerja_non_produktif']/$total_warga)*100, 2) }}%</span>
                                                     </li>
                                                     <li>
-                                                        <span>Usia Produktif Tidak Bekerja</span>
+                                                        <span>Productive Age Not Working</span>
                                                         <span class="badge badge-secondary">{{ number_format(($pie['non_kerja_produktif']/$total_warga)*100, 2) }}%</span>
                                                     </li>
                                                     <li>
-                                                        <span>Usia Non Produktif Tidak Bekerja</span>
+                                                        <span>Non-Productive Age Not Working</span>
                                                         <span class="badge badge-primary">{{ number_format(($pie['non_kerja_non_produktif']/$total_warga)*100, 2) }}%</span>
                                                     </li>
                                                 </ul>
@@ -287,7 +287,7 @@
                         <div class="col-md-8">
                             <div class="card">
                                 <div class="card-body">
-                                    <h5 class="card-title">Bansos</h5>
+                                    <h5 class="card-title">Social Donation</h5>
                                     <div id="apex70"></div>
                                 </div>
                             </div>
@@ -300,7 +300,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <span class="footer-text">2019 © stacks</span>
+                            <span class="footer-text">2024 © Power Puff Girl</span>
                         </div>
                     </div>
                 </div>
@@ -553,10 +553,10 @@
                     type: 'pie',
                     data: {
                         labels: [
-                            'Kerja Usia Produktif', 
-                            'Kerja Usia Non Produktif', 
-                            'Non Kerja Usia Produktif', 
-                            'Non Kerja Usia Non Produktif'
+                            'Productive Age Work', 
+                            'Non-Productive Age Work', 
+                            'Non-Workers of Productive Age', 
+                            'Non-Productive Age Non-Workers'
                         ],
                         datasets: [{
                             data: [

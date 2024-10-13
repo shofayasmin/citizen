@@ -67,11 +67,11 @@
                                                     Data Menu.....
                                                 </button>
                                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                                    <a class="dropdown-item" href="{{ route('citizen.rt') }}">RT</a>
-                                                    <a class="dropdown-item" href="{{ route('citizen.rumah') }}">Rumah</a>
-                                                    <a class="dropdown-item" href="{{ route('citizen.kk') }}">Kartu Keluarga</a>
-                                                    <a class="dropdown-item" href="{{ route('citizen.organisasi') }}">Organisasi</a>
-                                                    <a class="dropdown-item" href="{{ route('citizen.warga') }}">Warga</a>
+                                                    <a class="dropdown-item" href="{{ route('citizen.rt') }}">Neighborhood</a>
+                                                    <a class="dropdown-item" href="{{ route('citizen.rumah') }}">House</a>
+                                                    <a class="dropdown-item" href="{{ route('citizen.kk') }}">Family Card</a>
+                                                    <a class="dropdown-item" href="{{ route('citizen.organisasi') }}">Organizatition</a>
+                                                    <a class="dropdown-item" href="{{ route('citizen.warga') }}">Citizen</a>
                                                 </div>
                                             </div>
 

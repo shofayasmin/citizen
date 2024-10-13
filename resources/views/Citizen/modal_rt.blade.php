@@ -36,7 +36,7 @@
         <form action="{{ route('rt.store') }}" method="POST">
             @csrf
             <div class="form-group" style="margin-left: 10px; margin-right: 10px;">
-                <label for="exampleInputEmail1">Nama RT</label>
+                <label for="exampleInputEmail1">Neighborhood Head Name</label>
                 <select name="nik_ketua" id="exampleInputEmail1" class="form-control">
                     @foreach ($warga as $w)
                         <option value="{{ $w->nik }}">{{ $w->nama_lengkap }}</option>
@@ -47,8 +47,8 @@
                 @enderror
             </div>
             <div class="form-group" style="margin-left: 10px; margin-right: 10px;">
-                <label for="exampleInputEmail1">No RT</label>
-                <input type="form" name="no_rt" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Masukan No RT (conth: 003)">
+                <label for="exampleInputEmail1">Neighborhood Number</label>
+                <input type="form" name="no_rt" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Neighborhood Number (conth: 003)">
                 @error( 'no_rt' )
                     <small>{{ $message }}</small>
                 @enderror
@@ -91,14 +91,14 @@
             @method('PUT')
             <div class="form-group" style="margin-left: 10px; margin-right: 10px;">
                 <label for="exampleInputEmail1">Neighborhood Head</label>
-                <input type="form" name="nama_ketua" value="{{ $d->nama_ketua }}" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Masukan Nama RT">
+                <input type="form" name="nama_ketua" value="{{ $d->nama_ketua }}" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Neighborhood Name">
                 @error( 'nama_ketua' )
                     <small>{{ $message }}</small>
                 @enderror
             </div>
             <div class="form-group" style="margin-left: 10px; margin-right: 10px;">
-                <label for="exampleInputEmail1">Neighborhood Head ID</label>
-                <input type="form" name="no_rt" value="{{ $d->no_rt }}" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Masukan No RT (conth: 003)">
+                <label for="exampleInputEmail1">Neighborhood Number</label>
+                <input type="form" name="no_rt" value="{{ $d->no_rt }}" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Neighborhood Number (example: 003)">
                 @error( 'no_rt' )
                     <small>{{ $message }}</small>
                 @enderror

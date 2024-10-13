@@ -51,7 +51,7 @@
         <form action="{{ route('kk.store') }}" method="POST">
             @csrf
             <div class="form-group" style="margin-left: 10px; margin-right: 10px;">
-                <label for="exampleInputEmail1">Jenis Bansos</label>
+                <label for="exampleInputEmail1">Social donation type</label>
                 <input type="form" name="no_kk" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="12345678912345">
                 @error( 'no_kk' )
                     <small>{{ $message }}</small>
@@ -64,13 +64,13 @@
                     <small>{{ $message }}</small>
                 @enderror
             <div class="form-group">
-                <label for="exampleFormControlTextarea1">Siapa Saja Penerima Bansos</label>
+                <label for="exampleFormControlTextarea1">The recipient of social donation</label>
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
             </div>
 
             
             <div class="form-group" style="margin-left: 10px; margin-right: 10px;">
-                <label for="exampleInputEmail1">Tanggal Penyaluran</label>
+                <label for="exampleInputEmail1">Distribution date</label>
                 <input type="form" name="no_kk" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="12345678912345">
                 @error( 'no_kk' )
                     <small>{{ $message }}</small>
@@ -81,7 +81,7 @@
             
                                 
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 <button type="submit" class="btn btn-primary">Submit</button>
             </div>
         </form>

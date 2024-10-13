@@ -4,7 +4,7 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalCenterTitle">Konfirmasi Hapus Data</h5>
+                <h5 class="modal-title" id="exampleModalCenterTitle">Delete data confirmation</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <i class="material-icons">close</i>
                 </button>
@@ -15,7 +15,7 @@
                     @csrf
                     @method('DELETE')
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="Submit" class="btn btn-primary">Konfirmasi</button>
+                    <button type="Submit" class="btn btn-primary">Confirm</button>
                 </form>
             </div>
         </div>
@@ -43,7 +43,7 @@
                 @enderror
             </div>   
             <div class="form-group" style="margin-left: 10px; margin-right: 10px;">
-                <label for="exampleInputEmail1">No KK</label>
+                <label for="exampleInputEmail1">Family Card ID</label>
                 <input type="form" name="no_kk" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="12345678912345">
                 @error( 'no_kk' )
                     <small>{{ $message }}</small>
@@ -129,21 +129,21 @@
             </div>               
             <div class="form-group" style="margin-left: 10px; margin-right: 10px;">
                 <label for="exampleInputEmail1">Job</label>
-                <input type="text" name="pekerjaan" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Cukup masukkan Angka saja">
+                <input type="text" name="pekerjaan" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Just enter Numbers">
                 @error( 'pekerjaan' )
                     <small>{{ $message }}</small>
                 @enderror
             </div>               
             <div class="form-group" style="margin-left: 10px; margin-right: 10px;">
                 <label for="exampleInputEmail1">Nationality</label>
-                <input type="text" name="kewarganegaraan" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Cukup masukkan Angka saja">
+                <input type="text" name="kewarganegaraan" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Just enter Numbers">
                 @error( 'kewarganegaraan' )
                     <small>{{ $message }}</small>
                 @enderror
             </div>               
             <div class="form-group" style="margin-left: 10px; margin-right: 10px;">
-                <label for="exampleInputEmail1">domicile</label>
-                <input type="text" name="domisili" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Cukup masukkan Angka saja">
+                <label for="exampleInputEmail1">Domicile</label>
+                <input type="text" name="domisili" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Just enter Numbers">
                 @error( 'domisili' )
                     <small>{{ $message }}</small>
                 @enderror
@@ -160,7 +160,7 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
         <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalEditTitle{{ $d->nik }}">Edit Acara</h5>
+        <h5 class="modal-title" id="exampleModalEditTitle{{ $d->nik }}">Edit Event</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
         </button>
@@ -169,14 +169,14 @@
             @csrf
             @method('PUT')
             <div class="form-group" style="margin-left: 10px; margin-right: 10px;">
-                <label for="exampleInputEmail1">NIK</label>
-                <input type="text" name="nik" value="{{ $d->nik }}" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Masukkan Nama Pemilik">
+                <label for="exampleInputEmail1">ID Number</label>
+                <input type="text" name="nik" value="{{ $d->nik }}" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Owner Name">
                 @error( 'nik' )
                     <small>{{ $message }}</small>
                 @enderror
             </div>   
             <div class="form-group" style="margin-left: 10px; margin-right: 10px;">
-                <label for="exampleInputEmail1">No KK</label>
+                <label for="exampleInputEmail1">Family Card ID</label>
                 <input type="form" name="no_kk" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="12345678912345">
                 @error( 'no_kk' )
                     <small>{{ $message }}</small>
@@ -184,7 +184,7 @@
             </div>            
             <div class="form-group" style="margin-left: 10px; margin-right: 10px;">
                 <label for="exampleInputEmail1">Full Name</label>
-                <input type="text" name="nama_lengkap" value="{{ $d->nama_lengkap }}" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Cukup masukkan Angka saja">
+                <input type="text" name="nama_lengkap" value="{{ $d->nama_lengkap }}" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Just enter Number">
                 @error( 'nama_lengkap' )
                     <small>{{ $message }}</small>
                 @enderror

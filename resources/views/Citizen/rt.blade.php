@@ -46,8 +46,8 @@
                         <div class="page-title">
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb breadcrumb-separator-1">
-                                    <li class="breadcrumb-item"><a href="#">Kependudukan</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">RT</li>
+                                    <li class="breadcrumb-item"><a href="#">Citizen</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Neighborhood </li>
 
                                 </ol>
                             </nav>
@@ -80,8 +80,8 @@
                                                     </div>
                                                 @endif
 
-                                                <h5 class="card-title">Data RT</h5>
-                                                <p>Berikut adalah Data Data RT dari RW 003</code>.</p>
+                                                <h5 class="card-title">Neighborhood Data</h5>
+                                                <p>Here is the data of RT data from RW 003</code>.</p>
                                                 @if ($errors->has('no_kk'))
                                                     <div class="alert alert-danger">
                                                         {{ $errors->first('no_kk') }}
@@ -91,7 +91,7 @@
                                                 <div class="text-right mb-3">
                                                     <button type="button" class="btn btn-primary" data-toggle="modal"
                                                         data-target="#RT_tambah">
-                                                        Tambah Data Rt
+                                                        Add Data
                                                     </button>
                                                 </div>
                                                 <div class="table-responsive">
@@ -127,7 +127,7 @@
                                                                         <span data-toggle="modal"
                                                                             data-target="#exampleModalHapus{{ $d->rt_id }}"
                                                                             class="btn btn-danger"><i
-                                                                                class="fas fa-trash-alt"> Hapus</i></span>
+                                                                                class="fas fa-trash-alt">Delete</i></span>
                                                                     </td>
 
                                                                 </tr>
@@ -179,7 +179,7 @@
                                                                 </li>
                                                             @endif
                                                         </ul>
-                                                    </nav>
+                                                    </nav>
                                                 </div>
                                             </div>
 

@@ -85,7 +85,7 @@
                                                     <p>Here are the house data of RW 003</code>.</p>
                                                     <div class="text-right mb-3">
                                                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#rumah_tambah">
-                                                            Add House
+                                                            Add Data
                                                         </button>
                                                     </div>
                                                     <div class="table-responsive">
@@ -127,7 +127,7 @@
                                                                 @endforeach
                                                                 
                                                                 
-                                                               
+
                                                             </tbody>
                                                             
                                                         </table>
@@ -173,7 +173,7 @@
                                                                     </li>
                                                                 @endif
                                                             </ul>
-                                                        </nav>
+                                                        </nav>
                                                     </div>      
                                                 </div>
                                             </div>
