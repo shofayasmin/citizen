@@ -45,11 +45,11 @@
                             <div class="page-title">
                                 <nav aria-label="breadcrumb">
                                   <ol class="breadcrumb breadcrumb-separator-1">
-                                    <li class="breadcrumb-item"><a href="#">UMKM</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Manage UMKM</li>
+                                    <li class="breadcrumb-item"><a href="#">msme</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Manage MSME</li>
                                   </ol>
                                 </nav>
-                                <h3>Manage UMKM</h3>
+                                <h3>Manage MSME</h3>
                                 
                             </div>
                         </div>
@@ -64,18 +64,18 @@
                                             <div class="card">
                                                 <div class="card-body">
                                                     
-                                                    <h4 class="mb-0">Data UMKM</h4>
-                                                    <p>Berikut adalah Data Data UMKM dari RW 003</code>.</p>
+                                                    <h4 class="mb-0">Data MSME</h4>
+                                                    <p>The following is MSME data</code>.</p>
 
                                                     <div class="table-responsive">
                                                         <table class="table">
                                                             <thead>
                                                                 <tr>
                                                                     <th scope="col">No</th>
-                                                                    <th scope="col">Nama</th>
-                                                                    <th scope="col">Nama UMKM</th>
-                                                                    <th scope="col">Tipe UMKM</th>
-                                                                    <th scope="col">Deskripsi</th>
+                                                                    <th scope="col">NaNamema</th>
+                                                                    <th scope="col">MSME Name</th>
+                                                                    <th scope="col">MSME Type</th>
+                                                                    <th scope="col">Description</th>
                                                                 </tr>
                                                             </thead>
                                                             <tbody>
@@ -86,7 +86,7 @@
                                                                 <tr>
                                                                     <td>{{ $counter++ }}</td>
                                                                     <td>{{ $b->Nama }}</td>
-                                                                    <td>{{ $b->umkm }} Hari</td>
+                                                                    <td>{{ $b->umkm }} Day</td>
                                                                     <td>{{ $b->tipe_umkm }}</td>
                                                                     <td>{{ $b->deskripsi }}</td>
                                                                     
