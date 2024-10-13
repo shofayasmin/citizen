@@ -11,7 +11,7 @@
     <!-- The above 6 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title -->
-    <title>Acara View</title>
+    <title>View Event</title>
 
     <!-- Styles -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap"
@@ -48,12 +48,12 @@
                         <div class="page-title">
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb breadcrumb-separator-1">
-                                    <li class="breadcrumb-item"><a href="#">Acara</a></li>
+                                    <li class="breadcrumb-item"><a href="#">Event</a></li>
                                     <li class="breadcrumb-item active" aria-current="page">View</li>
                                   </ol>
                                 </nav>
                                 <div></div>
-                                <h3>View Umkm List</h3>
+                                <h3>View MSME List</h3>
                                 
                                 
                             </div>
@@ -75,7 +75,7 @@
                                 @if(Auth::check() && in_array(Auth::user()->role, $allowedRoles))
                                     <div class="d-flex justify-content-end">
                                         <a href="{{ route('umkm.register') }}" class="register-class mb-5">
-                                            Tambah Data
+                                            Add Data
                                         </a>
                                     </div>
                                 @endif
@@ -91,12 +91,12 @@
                                                 <img src="{{ asset('storage/photo-acara/2024-05-13Tempat pelatihan umkm daerah padamara 083114610391.jpeg') }}" class="card-img-top" alt="Placeholder" style="width: 100%; height: 200px; object-fit: cover;">
                                                 <div class="card-body">
                                                     <h5 class="card-title">{{ $d->umkm }}</h5>
-                                                    <p class="card-text">Penjelasan Detail Tentang UMKM Tersebut</p>
+                                                    <p class="card-text">Detailed Explanation of the MSMEs</p>
                                                     @if(in_array($d->umkm_id, $userParticipations))
                                                         <form id="form-batal-{{ $d->umkm_id }}" action="{{ route('umkm.batal', $d->umkm_id) }}" method="POST">
                                                             @csrf
                                                             
-                                                            <button type="button" class="btn btn-danger" onclick="confirmBatal({{ $d->umkm_id }})">Batalkan Kegiatan</button>
+                                                            <button type="button" class="btn btn-danger" onclick="confirmBatal({{ $d->umkm_id }})">Cancel Event</button>
                                                         </form>
                                                     @else
                                                         <span class="btn btn-success ikut-kegiatan" data-id="{{ $d->umkm_id }}" data-toggle="modal" data-target="#confirmationModal{{ $d->umkm_id }}">Ikut Kegiatan</span>

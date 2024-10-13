@@ -4,20 +4,20 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalCenterTitle">Konfirmasi Hapus Data</h5>
+                <h5 class="modal-title" id="exampleModalCenterTitle">Confirm Delete Data</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <i class="material-icons">close</i>
                 </button>
             </div>
             <div class="modal-body">
 
-                apakah anda yakin ingin menghapus data? <b>{{ $u->username }}</b> </div>
+            Are you sure you want to delete the data? <b>{{ $u->username }}</b> </div>
             <div class="modal-footer">
                 <form action="{{ route('user.delete', ['id' => $u->id]) }}" method="POST">
                     @csrf
                     @method('DELETE')
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="Submit" class="btn btn-primary">Konfirmasi</button>
+                    <button type="Submit" class="btn btn-primary">Confirm</button>
                 </form>
             </div>
         </div>
@@ -30,7 +30,7 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="User_tambahTitle">Tambah User</h5>
+                <h5 class="modal-title" id="User_tambahTitle">Add User</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -47,7 +47,7 @@
                 </div>
 
                 <div class="form-group" style="margin-left: 10px; margin-right: 10px;">
-                    <label for="exampleInputEmail1">Nama User</label>
+                    <label for="exampleInputEmail1">Username</label>
                     <select name="user_nik" id="exampleInputEmail1" class="form-control">
                         @foreach ($warga as $w)
                             <option value="{{ $w->nik }}">{{ $w->nama_lengkap }}</option>
@@ -60,12 +60,12 @@
 
                 <div class="form-row" style="margin-left: 10px; margin-right: 10px;">
                     <div class="form-group col-md-6">
-                        <label for="exampleInputPassword1">Jabatan</label>
+                        <label for="exampleInputPassword1">Position</label>
                         <select name="role" id="exampleInputEmail1" class="form-control">
-                            <option value="rt">RT</option>
-                            <option value="rw">RW</option>
-                            <option value="secretary">Sekretaris</option>
-                            <option value="citizen">Warga</option>
+                            <option value="rt">Vice Comunity</option>
+                            <option value="rw">Head Comunity</option>
+                            <option value="secretary">Secretary</option>
+                            <option value="citizen">Citizen</option>
                         </select>
                     </div>
                 </div>
@@ -80,8 +80,8 @@
                 </div>
 
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
-                    <button type="submit" class="btn btn-primary">Simpan User Baru</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Save New User</button>
                 </div>
             </form>
         </div>
@@ -94,7 +94,7 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalEditTitle{{ $u->id }}">Edit Data User</h5>
+                <h5 class="modal-title" id="exampleModalEditTitle{{ $u->id }}">Edit User Data</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -112,7 +112,7 @@
                 </div>
 
                 <div class="form-group" style="margin-left: 10px; margin-right: 10px;">
-                        <label for="role">Jabatan</label>
+                        <label for="role">Position</label>
                         <select name="role" id="role" class="form-control">
                             @foreach (['rt', 'rw', 'secretary', 'citizen'] as $roleOption)
                                 <option value="{{ $roleOption }}" @if ($u->role == $roleOption) selected @endif>
@@ -133,8 +133,8 @@
 
 
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
-                    <button type="submit" class="btn btn-primary">Simpan Perubahan</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">close</button>
+                    <button type="submit" class="btn btn-primary">Save Change</button>
                 </div>
             </form>
         </div>
