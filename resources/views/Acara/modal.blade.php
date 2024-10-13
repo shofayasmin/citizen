@@ -4,18 +4,18 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalCenterTitle">Konfirmasi Hapus Data</h5>
+                <h5 class="modal-title" id="exampleModalCenterTitle">Confirm Delete Data</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <i class="material-icons">close</i>
                 </button>
             </div>
-            <div class="modal-body">apakah anda yakin ingin menghapus data? <b>{{ $d->judul }}</b></div>
+            <div class="modal-body">are you sure you want to delete the data? <b>{{ $d->judul }}</b></div>
             <div class="modal-footer">
                 <form action="{{ route('acara.delete',['id'=> $d->id_acara]) }}" method="POST">
                     @csrf
                     @method('DELETE')
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="Submit" class="btn btn-primary">Konfirmasi</button>
+                    <button type="Submit" class="btn btn-primary">Confirm</button>
                 </form>
             </div>
         </div>
@@ -28,7 +28,7 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
         <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalTambahTitle">Tambah Acara</h5>
+        <h5 class="modal-title" id="exampleModalTambahTitle">Add Event</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
         </button>
@@ -37,28 +37,28 @@
         @csrf
         <div class="modal-body">
             <div class="form-group">
-            <label for="judul">Judul Acara</label>
+            <label for="judul">Event Title</label>
             <input type="text" class="form-control" id="judul" name="judul" placeholder="Masukkan Judul Acara">
             </div>
             <div class="form-group">
-            <label for="deskripsi">Deskripsi</label>
+            <label for="deskripsi">Description</label>
             <textarea class="form-control" id="deskripsi" name="deskripsi" rows="3" placeholder="Masukkan Deskripsi Acara"></textarea>
             </div>
             <div class="form-group">
-            <label for="tipe_acara">Tipe Acara</label>
+            <label for="tipe_acara">Event Type</label>
             <select class="form-control" id="tipe_acara" name="tipe_acara">
-                <option value="Kegiatan">Kegiatan</option>
-                <option value="Informasi">Informasi</option>
+                <option value="Kegiatan">Activity</option>
+                <option value="Informasi">Information</option>
             </select>
             </div>
             <div class="form-group">
-            <label for="image">Gambar Acara</label>
+            <label for="image">Event Photo</label>
             <input type="file" class="form-control-file" id="image" name="image">
             </div>
         </div>
         <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
-            <button type="submit" class="btn btn-primary">Simpan</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-primary">Save</button>
         </div>
         </form>
     </div>
@@ -70,7 +70,7 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
         <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalEditTitle{{ $d->id_acara }}">Edit Acara</h5>
+        <h5 class="modal-title" id="exampleModalEditTitle{{ $d->id_acara }}">Edit Event</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
         </button>
@@ -80,7 +80,7 @@
             @method('PUT')
 
             <div class="form-group" style="margin-left: 10px; margin-right: 10px;">
-                <label for="exampleInputEmail1">Judul Acara</label>
+                <label for="exampleInputEmail1">Event Title</label>
                 <input type="form" name="judul" value="{{ $d->judul }}" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Masukan Judul">
                 
                 @error('judul')
@@ -88,15 +88,15 @@
                 @enderror
             </div>
             <div class="form-group" style="margin-left: 10px; margin-right: 10px;">
-                <label for="">Deskripsi</label>
+                <label for="">Description</label>
                 <textarea class="form-control" name="deskripsi" id="exampleFormControlTextarea1" rows="3" placeholder="Masukkan Deskripsi">{{ old('deskripsi', $d->deskripsi) }}</textarea>
             </div>
 
             <div class="form-group" style="margin-left: 10px; margin-right: 10px;">
-                <label for="exampleFormControlSelect1">Tipe Acara</label>
+                <label for="exampleFormControlSelect1">Event Type</label>
                 <select class="form-control custom-select" name="tipe_acara" value="{{ $d->tipe_acara }}" id="exampleFormControlSelect1">
-                    <option>Kegiatan</option>
-                    <option>Informasi</option>
+                    <option>Activity</option>
+                    <option>Information</option>
                 </select>
                 @error('tipe_acara')
                     <small>{{ $message }}</small>
@@ -110,7 +110,7 @@
             </div>
                                 
             <div class="modal-footer" style="margin-left: 10px; margin-right: 10px;">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 <button type="submit" class="btn btn-primary">Submit</button>
             </div>
         </form>
@@ -136,12 +136,12 @@
                         @if(in_array($d->id_acara, $userParticipations))
                             <form action="{{ route('acara.batal', $d->id_acara) }}" method="POST">
                                 @csrf
-                                <button type="submit" class="btn btn-danger">Batalkan Kegiatan</button>
+                                <button type="submit" class="btn btn-danger">Cancel Event</button>
                             </form>
                         @else
                             <form action="{{ route('acara.ikuti', $d->id_acara) }}" method="POST">
                                 @csrf
-                                <button type="submit" class="btn btn-link">Ikut Kegiatan</button>
+                                <button type="submit" class="btn btn-link">Join Event</button>
                             </form>
                         @endif
                     @endif

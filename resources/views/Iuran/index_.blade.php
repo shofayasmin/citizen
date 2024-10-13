@@ -10,7 +10,7 @@
         <!-- The above 6 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         
         <!-- Title -->
-        <title>Manage Iuran Data</title>
+        <title>Manage Comunity Contribution Data</title>
 
         <!-- Styles -->
         <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
@@ -45,13 +45,13 @@
                                 
                                 <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb breadcrumb-separator-1">
-                                    <li class="breadcrumb-item"><a href="#">Iuran</a></li>
+                                    <li class="breadcrumb-item"><a href="#">Comunity Contribution</a></li>
                                     <li class="breadcrumb-item active" aria-current="page">#</li>
                                     
                                 </ol>
                                 
                                 </nav>
-                                <h3>Iuran</h3>
+                                <h3></h3>
                                 
                             </div>
                         </div>
@@ -65,11 +65,11 @@
                                         <div class="col-xl">
                                             <div class="card">
                                                 <div class="card-body">
-                                                    <h5 class="card-title">Iuran</h5>
-                                                    <p>Berikut adalah Data Iuran dari RW 003</code>.</p>
+                                                    <h5 class="card-title">Comunity Contribution</h5>
+                                                    <p>The following is the comunity contribution data</code>.</p>
                                                     <div class="text-right mb-3">
                                                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#rumah_tambah">
-                                                            Tambah Iuran
+                                                            Add Contributions
                                                         </button>
                                                     </div>
                                                     <div class="table-responsive">
@@ -78,11 +78,11 @@
                                                                 
                                                                 <tr>
                                                                     <th scope="col">No</th>
-                                                                    <th scope="col">Tanggal</th>
-                                                                    <th scope="col">Pemasukan</th>
-                                                                    <th scope="col">Pengeluaran</th>
+                                                                    <th scope="col">Date</th>
+                                                                    <th scope="col">Income</th>
+                                                                    <th scope="col">Outcome</th>
                                                                     <th scope="col">Total</th>
-                                                                    <th scope="col">Deskripsi</th>
+                                                                    <th scope="col">Description</th>
                                                                     
                                                                 </tr>
                                                             </thead>
@@ -95,7 +95,7 @@
                                                                     <td>Rp. 10.000.000</td>
                                                                     <td>Rp. 2.000.000</td>
                                                                     <td>Rp. 8.000.000</td>
-                                                                    <td>Iuran yang dibayarkan secara berkala untuk mendapatkan akses ke layanan kesehatan, seperti asuransi kesehatan atau program kesehatan pemerintah.</td>
+                                                                    <td>Contributions paid periodically to gain access to health services, such as health insurance or government health programs.</td>
                                                                 </tr>
                                                                 <tr>
                                                                     <th scope="row">2</th>
@@ -103,7 +103,7 @@
                                                                     <td>Rp. 11.000.000</td>
                                                                     <td>Rp. 4.000.000</td>
                                                                     <td>Rp. 6.000.000</td>
-                                                                    <td>Pembayaran rutin yang dilakukan oleh anggota organisasi atau klub untuk mendukung kegiatan dan operasi organisasi tersebut.</td>
+                                                                    <td>PRegular payments made by members of an organization or club to support the activities and operations of that organization.</td>
                                                                 </tr>
                                                                 <tr>
                                                                     <th scope="row">3</th>
@@ -111,7 +111,7 @@
                                                                     <td>Rp. 6.000.000</td>
                                                                     <td>Rp. 2.000.000</td>
                                                                     <td>Rp. 4.000.000</td>
-                                                                    <td>Biaya yang harus dibayar oleh siswa atau orang tua mereka untuk mendapatkan akses ke pendidikan formal di institusi pendidikan.</td>
+                                                                    <td>The fees that students or their parents have to pay to gain access to formal education in educational institutions.</td>
                                                                 </tr>
                                                                 <tr>
                                                                     <th scope="row">4</th>
@@ -127,7 +127,7 @@
                                                                     <td>Rp. 20.000.000</td>
                                                                     <td>Rp. 5.000.000</td>
                                                                     <td>Rp. 15.000.000</td>
-                                                                    <td>Biaya yang harus dibayarkan untuk memarkir kendaraan bermotor di area parkir tertentu, seperti di pusat perbelanjaan, bandara, atau tempat umum lainnya.</td>
+                                                                    <td>A fee payable for parking a motor vehicle in a specific parking area, such as at a shopping center, airport, or other public place.</td>
                                                                 </tr>
                                                                 <tr>
                                                                     <th scope="row">6</th>
@@ -135,7 +135,7 @@
                                                                     <td>Rp. 5.000.000</td>
                                                                     <td>Rp. 4.500.000</td>
                                                                     <td>Rp. 500.000</td>
-                                                                    <td>Biaya yang harus dibayar oleh anggota asosiasi atau badan profesi untuk mendukung kegiatan dan layanan yang disediakan oleh asosiasi tersebut.</td>
+                                                                    <td>Fees payable by members of an association or professional body to support the activities and services provided by the association.</td>
                                                                 </tr>
                                                                 <tr>
                                                                     <th scope="row">7</th>
@@ -143,7 +143,7 @@
                                                                     <td>Rp. 2.000.000</td>
                                                                     <td>Rp. 8.000.000</td>
                                                                     <td>Rp. -6.000.000</td>
-                                                                    <td>Pembayaran bulanan atau tahunan yang harus dibayarkan oleh pemilik rumah atau apartemen di kompleks perumahan untuk biaya pemeliharaan dan penyediaan layanan komunal.</td>
+                                                                    <td>A monthly or annual payment payable by the owner of a house or apartment in a housing complex for the cost of maintaining and providing communal services.</td>
                                                                 </tr>
                                                                 <tr>
                                                                     <th scope="row">8</th>
@@ -151,7 +151,7 @@
                                                                     <td>Rp. 5.000.000</td>
                                                                     <td>Rp. 20.000.000</td>
                                                                     <td>Rp. -15.000.000</td>
-                                                                    <td>Biaya yang dibebankan oleh perusahaan kartu kredit kepada pemegang kartu sebagai bagian dari penggunaan kartu kredit mereka, seperti biaya tahunan atau bunga.</td>
+                                                                    <td>Fees charged by credit card companies to cardholders as part of their credit card usage, such as annual fees or interest.</td>
                                                                 </tr>
                                                                 <tr>
                                                                     <th scope="row">9</th>
@@ -159,7 +159,7 @@
                                                                     <td>Rp. 10.000.000</td>
                                                                     <td>Rp. 3.000.000</td>
                                                                     <td>Rp. 7.000.000</td>
-                                                                    <td>Pembayaran yang harus dibayar oleh anggota klub olahraga untuk mendapatkan akses ke fasilitas olahraga dan program kebugaran yang ditawarkan oleh klub tersebut.</td>
+                                                                    <td>A payment that members of a sports club must pay to gain access to the sports facilities and fitness programs offered by the club.</td>
                                                                 </tr>
                                                                 <tr>
                                                                     <th scope="row">10</th>
@@ -167,7 +167,7 @@
                                                                     <td>Rp. 50.000.000</td>
                                                                     <td>Rp. 15.000.000</td>
                                                                     <td>Rp. 35.000.000</td>
-                                                                    <td>Pembayaran periodik yang dilakukan kepada perusahaan asuransi untuk mendapatkan perlindungan finansial terhadap risiko tertentu, seperti asuransi jiwa, asuransi kesehatan, atau asuransi properti.</td>
+                                                                    <td>Periodic payments made to an insurance company to obtain financial protection against certain risks, such as life insurance, health insurance, or property insurance.</td>
                                                                 </tr>
                                                                 
 
@@ -178,7 +178,7 @@
                                                             </tbody>
                                                             
                                                         </table>
-                                                        <a href="{{ route('citizen.index') }}"> <- Kembali</a>
+                                                        <a href="{{ route('citizen.index') }}"> <- Back</a>
                                                     </div>      
                                                 </div>
                                             </div>

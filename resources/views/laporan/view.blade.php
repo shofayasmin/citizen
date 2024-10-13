@@ -74,7 +74,7 @@
                                         @if ($d->warga)
                                             <h5 class="card-title">{{ $d->warga->nama_lengkap }}</h5>
                                         @else
-                                            <h5 class="card-title text-danger">Unknown Warga</h5>
+                                            <h5 class="card-title text-danger">Unknown Citizen</h5>
                                         @endif
                                         <a href="#" class="badge badge-primary" data-toggle="modal" data-target="#Read_More_{{ $d->laporan_id }}">Read More</a>
                                         <div class="text-right">
