@@ -117,8 +117,6 @@
     </div>
     </div>
 </div>
-
-
 <!-- Modal Untuk Ikuti Kegiatan -->
 @foreach($data as $key => $d)
     <div class="modal fade" id="Read_More_{{ $key }}" tabindex="-1" role="dialog" aria-labelledby="Read_MoreTitle_{{ $key }}" aria-hidden="true">

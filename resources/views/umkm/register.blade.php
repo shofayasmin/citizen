@@ -60,7 +60,7 @@
                         <div class="col-xl">
                             <div class="card">
                                 <div class="card-body">
-                                    <h5 class="card-title">Menambah Data UMKM</h5>
+                                    <h5 class="card-title">Add MSME Data</h5>
                                     <p> </p>
 
                                     
@@ -74,7 +74,7 @@
                                             @enderror
                                         </div>
                                         <div class="form-group">
-                                            <label for="exampleInputEmail1">Nama UMKM</label>
+                                            <label for="exampleInputEmail1">UMKM Name</label>
                                             <input type="form" name="umkm" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Masukan umkm">
                                             
                                             @error('umkm')
@@ -82,14 +82,14 @@
                                             @enderror
                                         </div>
                                         <div class="form-group">
-                                            <label for="exampleFormControlTextarea1">Deskripsi</label>
+                                            <label for="exampleFormControlTextarea1">Description</label>
                                             <textarea class="form-control" name="deskripsi" id="exampleFormControlTextarea1" rows="3" placeholder="Masukkan deskripsi"></textarea>
                                             @error('deskripsi')
                                                 <small>{{ $message }}</small>
                                             @enderror
                                         </div>
                                         <div class="form-group">
-                                            <label for="exampleFormControlTextarea1">Tipe UMKM</label>
+                                            <label for="exampleFormControlTextarea1">MSME Type</label>
                                             <textarea class="form-control" name="tipe_umkm" id="exampleFormControlTextarea1" rows="3" placeholder="Masukkan tipe_umkm"></textarea>
                                             @error('tipe_umkm')
                                                 <small>{{ $message }}</small>

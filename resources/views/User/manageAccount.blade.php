@@ -55,7 +55,7 @@
                                     <li class="breadcrumb-item active" aria-current="page">Manage Account</li>
                                 </ol>
                             </nav>
-                            <h3>Form Pengaturan Akun</h3>
+                            <h3>Account Setup Form</h3>
 
                         </div>
                     </div>
@@ -116,8 +116,8 @@
                                     
                                     
                                                     <div class="modal-footer">
-                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
-                                                        <button type="submit" class="btn btn-primary">Simpan Perubahan</button>
+                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                        <button type="submit" class="btn btn-primary">Save Change</button>
                                                     </div>
                                                 </form>
 
@@ -129,7 +129,7 @@
                     </div>
                 </div>
             </div>
-            <a href="{{ route('dashboard.index') }}"> <- Kembali</a>
+            <a href="{{ route('dashboard.index') }}"> <- Back</a>
 
         </div>
 

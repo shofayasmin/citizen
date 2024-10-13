@@ -4,18 +4,18 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalCenterTitle">Konfirmasi Hapus Data</h5>
+                    <h5 class="modal-title" id="exampleModalCenterTitle">Confirm Delete Data</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <i class="material-icons">close</i>
                     </button>
                 </div>
-                <div class="modal-body">Apakah Anda yakin ingin menghapus data? <b>{{ $b->Nama }}</b></div>
+                <div class="modal-body">Are you sure you want to delete the data? <b>{{ $b->Nama }}</b></div>
                 <div class="modal-footer">
                     <form action="{{ route('umkm.delete', ['id' => $b->umkm_id]) }}" method="POST">
                         @csrf
                         @method('DELETE')
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
-                        <button type="submit" class="btn btn-primary">Konfirmasi</button>
+                        <button type="submit" class="btn btn-primary">Confirm</button>
                     </form>
                 </div>
             </div>
@@ -27,7 +27,7 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalEditTitle{{ $b->umkm_id }}">Edit UMKM</h5>
+                    <h5 class="modal-title" id="exampleModalEditTitle{{ $b->umkm_id }}">Edit MSME</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -37,36 +37,36 @@
                     @method('PUT')
                     <div class="modal-body">
                         <div class="form-group">
-                            <label for="Nama">Nama Peserta</label>
+                            <label for="Nama">Participant Name</label>
                             <input type="text" name="Nama" value="{{ old('Nama', $b->Nama) }}" class="form-control" placeholder="Masukkan Nama">
                             @error('Nama')
                                 <div class="text-danger">{{ $message }}</div>
                             @enderror
                         </div>
                         <div class="form-group">
-                            <label for="umkm">Nama UMKM</label>
+                            <label for="umkm">MSME Name</label>
                             <textarea class="form-control" name="umkm" rows="3" placeholder="Masukkan Nama UMKM">{{ old('umkm', $b->umkm) }}</textarea>
                             @error('umkm')
                                 <div class="text-danger">{{ $message }}</div>
                             @enderror
                         </div>
                         <div class="form-group">
-                            <label for="gambar">Gambar</label>
+                            <label for="gambar">Image</label>
                             <input type="file" name="gambar" class="form-control">
                             @error('gambar')
                                 <div class="text-danger">{{ $message }}</div>
                             @enderror
-                            <small>Gambar saat ini: <img src="{{ asset('uploads/' . $b->gambar) }}" alt="gambar" width="50"></small>
+                            <small>Current Image: <img src="{{ asset('uploads/' . $b->gambar) }}" alt="gambar" width="50"></small>
                         </div>
                         <div class="form-group">
-                            <label for="tipe_umkm">Tipe UMKM</label>
+                            <label for="tipe_umkm">MSME Type</label>
                             <textarea class="form-control" name="tipe_umkm" rows="3" placeholder="Masukkan Tipe UMKM">{{ old('tipe_umkm', $b->tipe_umkm) }}</textarea>
                             @error('tipe_umkm')
                                 <div class="text-danger">{{ $message }}</div>
                             @enderror
                         </div>
                         <div class="form-group">
-                            <label for="deskripsi">Deskripsi</label>
+                            <label for="deskripsi">Description</label>
                             <textarea class="form-control" name="deskripsi" rows="3" placeholder="Masukkan Deskripsi">{{ old('deskripsi', $b->deskripsi) }}</textarea>
                             @error('deskripsi')
                                 <div class="text-danger">{{ $message }}</div>
@@ -74,7 +74,7 @@
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </div>
                 </form>
@@ -90,7 +90,7 @@
                 @csrf
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="confirmationModalLabel{{ $b->umkm_id }}">Konfirmasi Partisipasi</h5>
+                        <h5 class="modal-title" id="confirmationModalLabel{{ $b->umkm_id }}">Confirmation of Participation</h5>
                         <input type="hidden" name="umkm_id" value="{{ $b->umkm_id }}">
                         <input type="hidden" name="user_id" value="{{ auth()->user()->id }}">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -98,7 +98,7 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        Apakah anda bersedia untuk ikut?
+                        Are you willing to join?
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
