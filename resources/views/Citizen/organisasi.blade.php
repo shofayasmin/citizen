@@ -44,8 +44,9 @@
                             <div class="page-title">
                                 <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb breadcrumb-separator-1">
-                                <li class="breadcrumb-item"><a href="#">Citizen</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">Organization</li>
+                                    <li class="breadcrumb-item"><a href="{{ route('dashboard.index') }}">Dashboard</a></li>
+                                    <li class="breadcrumb-item"><a href="#">Citizenship</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Organization</li>
                                 </ol>
                                 </nav>
                                 <h3>Organization Data </h3>
@@ -77,7 +78,7 @@
                                                         </div>
                                                     @endif
                                                     <h5 class="card-title">Organization Data </h5>
-                                                    <p>Here is the Organizational Data of RW 003</code>.</p>
+                                                    <p>Here is the Organizational Data of neighborhood 003</code>.</p>
                                                     <div class="text-right mb-3">
                                                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#organisasi_tambah">
                                                             Add Data

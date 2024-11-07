@@ -45,7 +45,7 @@
                     </div>
                     <div class="form-group" style="margin-left: 10px; margin-right: 10px;">
                         <label for="income_name">Income Name</label>
-                        <input type="form" class="form-control" name="income_name" id="income_name" aria-describedby="emailHelp" placeholder="Masukkan Nama Pemasukan">
+                        <input type="form" class="form-control" name="income_name" id="income_name" aria-describedby="emailHelp" placeholder="Enter The Income Name">
                         @error( 'income_name' )
                             <small>{{ $message }}</small>
                         @enderror
@@ -53,22 +53,22 @@
                     <div class="form-group" style="margin-left: 10px; margin-right: 10px;">
                         <label for="income_type">Income Type</label>
                         <select class="form-control" id="income_type" name="income_type">
-                            <option value="Iuran Warga">Citizen's Contribution</option>
-                            <option value="Sumbangan">Dination</option>
-                            <option value="Usaha RW">Comunity Business</option>
-                            <option value="Bantuan Pemerintah">Goverment Support</option>
+                            <option value="Citizens Fee">Citizen's Fee</option>
+                            <option value="Dination">Dination</option>
+                            <option value="Comunity Business">Comunity Business</option>
+                            <option value="Goverment Support">Goverment Support</option>
                         </select>
                     </div>
                     <div class="form-group" style="margin-left: 10px; margin-right: 10px;">
                         <label for="description">Description</label>
-                        <input class="form-control" id="description" name="description" rows="3" aria-describedby="emailHelp" placeholder="Masukkan Deskripsi">
+                        <input class="form-control" id="description" name="description" rows="3" aria-describedby="emailHelp" placeholder="Enter The Description">
                         @error( 'description' )
                             <small>{{ $message }}</small>
                         @enderror
                     </div>
                     <div class="form-group" style="margin-left: 10px; margin-right: 10px;">
                         <label for="inflow">Inflow</label>
-                        <input type="number" class="form-control" name="inflow" id="inflow" aria-describedby="emailHelp" placeholder="Masukkan Nominal Pemasukan">
+                        <input type="number" class="form-control" name="inflow" id="inflow" aria-describedby="emailHelp" placeholder="Enter The Nominal Of The Income">
                         @error( 'inflow' )
                             <small>{{ $message }}</small>
                         @enderror
@@ -114,10 +114,10 @@
                     <div class="form-group">
                         <label for="income_type">Income Type</label>
                         <select class="form-control" id="income_type" name="income_type">
-                            <option value="Iuran Warga" {{ $income->income_type == "Iuran Warga" ? 'selected' : '' }}>Citizen's Contribution</option>
-                            <option value="Sumbangan" {{ $income->income_type == "Sumbangan" ? 'selected' : '' }}>Donation</option>
-                            <option value="Usaha RW" {{ $income->income_type == "Usaha RW" ? 'selected' : '' }}>Community Business</option>
-                            <option value="Bantuan Pemerintah" {{ $income->income_type == "Bantuan Pemerintah" ? 'selected' : '' }}>Goverment Support</option>
+                            <option value="Citizens Fee" {{ $income->income_type == "Citizens Fee" ? 'selected' : '' }}>Citizen's Fee</option>
+                            <option value="Donation" {{ $income->income_type == "Donation" ? 'selected' : '' }}>Donation</option>
+                            <option value="Community Business" {{ $income->income_type == "Community Business" ? 'selected' : '' }}>Community Business</option>
+                            <option value="Goverment Support" {{ $income->income_type == "Goverment Support" ? 'selected' : '' }}>Goverment Support</option>
                         </select>
                     </div>
                     <div class="form-group">

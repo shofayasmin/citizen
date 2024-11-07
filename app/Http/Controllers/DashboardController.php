@@ -24,7 +24,7 @@ class DashboardController extends Controller
     }
     public function rw()
     {
-        $laporan = Laporan::orderByRaw("FIELD(status,'Belum Selesai', 'Selesai')")->get();
+        $laporan = Laporan::orderByRaw("FIELD(status,'In Progress', 'Finished')")->get();
         $user = Auth::user();
 
         $incomes = Income::orderBy('date')->get();

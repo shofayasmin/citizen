@@ -18,10 +18,10 @@ class LaporanController extends Controller
     public function view()
     {
         $data = Laporan::with('warga','comments','comments')
-        ->orderByRaw("FIELD(status,'Belum Selesai', 'Selesai')")->paginate(5);
+        ->orderByRaw("FIELD(status,'In Progress', 'Finished')")->paginate(5);
 
         $data_tambahan = Laporan::with('comments.user')
-        ->orderByRaw("FIELD(status, 'Belum Selesai', 'Selesai')")
+        ->orderByRaw("FIELD(status, 'In Progress', 'Finished')")
         ->get();
 
         $comment = Comment::all();
@@ -84,7 +84,7 @@ class LaporanController extends Controller
         $data['judul'] = $request->judul;
         $data['pengirim'] = $request->pengirim;
         $data['deskripsi'] = $request->deskripsi;
-        $data['status'] = 'Belum Selesai';
+        $data['status'] = 'In Progress';
         $data['gambar'] = $image;
 
         laporan::create($data);

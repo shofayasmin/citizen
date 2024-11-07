@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>C-Hub</title>
+    <title>citizenSide</title>
 </head>
 
 <body>
     @include('layoutWarga.header')
 
+    
     <div class="container d-flex flex-wrap justify-content-between h-70 overflow-auto mt-5">
         @foreach ($bansos as $d)
             <div class="card">

@@ -36,8 +36,6 @@
 
     @include('layouts.sidebar')
 
-
-
     @include('layouts.header')
 
     <div class="lime-container">
@@ -48,17 +46,15 @@
                         <div class="page-title">
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb breadcrumb-separator-1">
-                                    <li class="breadcrumb-item"><a href="#">Event</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">View</li>
-                                  </ol>
-                                </nav>
-                                <div></div>
-                                <h3>View MSME List</h3>
-                                
-                                
-                            </div>
+                                    <li class="breadcrumb-item"><a href="{{ route('dashboard.index') }}">Dashboard</a></li>
+                                    <li class="breadcrumb-item"><a href="#">MSME's</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">MSME's List</li>
+                                </ol>
+                            </nav>
+                            <h3>View MSME's List</h3>
                         </div>
                     </div>
+                </div>
 
                     <div class="row">
                         <div class="col-xl">
@@ -99,7 +95,7 @@
                                                             <button type="button" class="btn btn-danger" onclick="confirmBatal({{ $d->umkm_id }})">Cancel Event</button>
                                                         </form>
                                                     @else
-                                                        <span class="btn btn-success ikut-kegiatan" data-id="{{ $d->umkm_id }}" data-toggle="modal" data-target="#confirmationModal{{ $d->umkm_id }}">Ikut Kegiatan</span>
+                                                        <span class="btn btn-success ikut-kegiatan" data-id="{{ $d->umkm_id }}" data-toggle="modal" data-target="#confirmationModal{{ $d->umkm_id }}">Join</span>
                                                     @endif
                                                     <div class="text-right">
                                                         <span class="badge badge-pill badge-info">{{ $d->tipe_umkm }}</span>

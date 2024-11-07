@@ -49,15 +49,15 @@
                     <div class="card mb-4">
                         <div class="card-body">
                             <h5 class="card-title">Promethee</h5>
-                            <p>Ini adalah List Orang Orang yang berhak mendapatkan Bantuan Sosial</p>
+                            <p>This is a list of people who are entitled to social donation</p>
                             <form action="{{ route('store.alternatives.results') }}" method="POST">
                                 @csrf
                                 <table class="table table-bordered">
                                     <thead>
                                         <tr>
                                             <th scope="col">No</th>
-                                            <th scope="col">Nama Kandidat</th>
-                                            <th scope="col">NIK</th>
+                                            <th scope="col">Name of Candidate</th>
+                                            <th scope="col">ID Number</th>
                                             <th scope="col">Net Flow</th>
                                         </tr>
                                     </thead>

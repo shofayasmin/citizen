@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id('id_acara');
             $table->string('judul',50);
             $table->text('deskripsi');
-            $table->enum('tipe_acara',['Informasi','Kegiatan']);
+            $table->enum('tipe_acara',['Information','Activity']);
             $table->string('image')->nullable();
             $table->timestamps();
         });

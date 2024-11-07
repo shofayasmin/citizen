@@ -20,7 +20,7 @@ class WargaFactory extends Factory
     {
         $usia = $this->faker->numberBetween(1, 80);
 
-        $status = $usia < 15 ? 'Belum Kawin' : $this->faker->randomElement(['Belum Kawin', 'Kawin', 'Cerai Hidup', 'Cerai Mati']);
+        $status = $usia < 15 ? 'Single' : $this->faker->randomElement(['Single', 'Married', 'Divorce', 'Dead Divorce']);
         $pekerjaan = $usia < 15 ? 'Tidak Bekerja' : $this->faker->randomElement([
             'Karyawan Swasta', 'Pegawai Negeri Sipil', 'Wiraswasta', 'Petani', 'Pedagang', 'Guru',
             'Dokter', 'Perawat', 'Supir', 'Buruh', 'Tidak Bekerja'
@@ -34,9 +34,9 @@ class WargaFactory extends Factory
             'nama_lengkap' => $this->faker->name(),
             'tempat_lahir' => $this->faker->city(),
             'tanggal_lahir' => $this->faker->dateTimeBetween('-80 years', '-15 years'),
-            'jenis_kelamin' => $this->faker->randomElement(['Laki-laki', 'Perempuan']),
+            'jenis_kelamin' => $this->faker->randomElement(['Male', 'Female']),
             'alamat' => $this->faker->address(),
-            'agama' => $this->faker->randomElement(['Islam', 'Kristen', 'Katolik', 'Hindu', 'Buddha', 'Konghucu']),
+            'agama' => $this->faker->randomElement(['Islam', 'Christian', 'Catholic','Hindu', 'Buddhist', 'Confucian', 'None']),
             'nomor_telepon' => $this->faker->phoneNumber(),
             'status' => $status,
             'pekerjaan' => $pekerjaan,

@@ -18,19 +18,19 @@ class BansosFactory extends Factory
     {
         return [
             'judul'                 => fake()->randomElement([
-                                    'Bantuan Sembako Masyarakat',
-                                    'Program Bantuan Tunai',
-                                    'Bantuan Sosial Anak Yatim',
-                                    'Bantuan Lansia',
-                                    'Bantuan Pendidikan',
-                                    'Program Keluarga Harapan',
-                                    'Bantuan Covid-19',
-                                    'Subsidi Listrik',
-                                    'Bantuan Rumah Tangga',
-                                    'Bantuan Bencana Alam'
+                                    'Community Basic Food Support',
+                                    'Cash Support Program',
+                                    'Social Support for Orphans',
+                                    'Elderly Care Support',
+                                    'Education Support',
+                                    'Family Hope Program',
+                                    'Covid-19 Support',
+                                    'Electricity Subsidy',
+                                    'Household Support',
+                                    'Natural Disaster Support'
                                 ]),
             'gambar'                => ('infobansos.png'),
-            'jenis_bansos'          => fake()->randomElement(['Sembako', 'Tunai', 'Lain-lain', 'Beras', 'Bantuan Kesehatan', 'Pendidikan', 'Kartu Sakti', 'Bantuan Bencana']),
+            'jenis_bansos'          => fake()->randomElement(['Basic Food', 'Cash', 'Other', 'Rice', 'Health Aid', 'Education', 'Magic Card', 'Disaster Support']),
             'periode_bansos'        => fake()->numberBetween(1,3),
             'tanggal_penyaluran'    => fake()->dateTimeBetween('-5 years', 'now'),
             'jumlah_bansos'         => fake()->numberBetween(10,30),

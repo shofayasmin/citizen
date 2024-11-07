@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Citizen Hub</title>
+    <title>citizenSide</title>
     <link href="https://fonts.googleapis.com/css?family=Heebo:400,500,700|Fira+Sans:600" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('april/dist/css/style.css') }}">
 	<script src="https://unpkg.com/animejs@2.2.0/anime.min.js"></script>
@@ -16,58 +16,59 @@
         <header class="site-header">
 			<div class="header-shape header-shape-1">
 				<svg width="337" height="222" viewBox="0 0 337 222" xmlns="http://www.w3.org/2000/svg">
-				    <defs>
-				        <linearGradient x1="50%" y1="55.434%" x2="50%" y2="0%" id="header-shape-1">
-				            <stop stop-color="#E0E1FE" stop-opacity="0" offset="0%"/>
-				            <stop stop-color="#E0E1FE" offset="100%"/>
-				        </linearGradient>
-				    </defs>
-				    <path d="M1103.21 0H1440v400h-400c145.927-118.557 166.997-251.89 63.21-400z" transform="translate(-1103)" fill="url(#header-shape-1)" fill-rule="evenodd"/>
+				<defs>
+					<linearGradient x1="50%" y1="55.434%" x2="50%" y2="0%" id="header-shape-1">
+						<stop stop-color="#E0E1FE" stop-opacity="0" offset="0%"/>
+						<stop stop-color="#E0E1FE" offset="100%"/>
+					</linearGradient>
+				</defs>
+				<path d="M1103.21 0H1440v400h-400c145.927-118.557 166.997-251.89 63.21-400z" transform="translate(-1103)" fill="url(#header-shape-1)" fill-rule="evenodd"/>
 				</svg>
 			</div>
 			<div class="header-shape header-shape-2">
 				<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg" style="overflow:visible">
-				    <defs>
-				        <linearGradient x1="93.05%" y1="19.767%" x2="15.034%" y2="85.765%" id="header-shape-2">
-				            <stop stop-color="#FF3058" offset="0%"/>
-				            <stop stop-color="#FF6381" offset="100%"/>
-				        </linearGradient>
-				    </defs>
-				    <circle class="anime-element fadeup-animation" cx="64" cy="64" r="64" fill="url(#header-shape-2)" fill-rule="evenodd"/>
+				<defs>
+					<linearGradient x1="93.05%" y1="19.767%" x2="15.034%" y2="85.765%" id="header-shape-2">
+						<stop stop-color="#FF3058" offset="0%"/>
+						<stop stop-color="#FF6381" offset="100%"/>
+					</linearGradient>
+				</defs>
+				<circle class="anime-element fadeup-animation" cx="64" cy="64" r="64" fill="url(#header-shape-2)" fill-rule="evenodd"/>
 				</svg>
 			</div>
             <div class="container">
                 <div class="site-header-inner">
                     <div class="brand header-brand">
-                        <h1 class="m-0">
-                            <a href="#">
-								<svg width="32" height="32" xmlns="http://www.w3.org/2000/svg">
-									<title>April</title>
-								    <defs>
-								        <linearGradient x1="114.674%" y1="39.507%" x2="-52.998%" y2="39.507%" id="logo-a">
-								            <stop stop-color="#8D92FA" offset="0%"/>
-								            <stop stop-color="#8D92FA" stop-opacity="0" offset="100%"/>
-								        </linearGradient>
-								        <linearGradient x1="93.05%" y1="19.767%" x2="15.034%" y2="85.765%" id="logo-b">
-								            <stop stop-color="#FF3058" offset="0%"/>
-								            <stop stop-color="#FF6381" offset="100%"/>
-								        </linearGradient>
-								        <linearGradient x1="32.716%" y1="-20.176%" x2="32.716%" y2="148.747%" id="logo-c">
-								            <stop stop-color="#FF97AA" offset="0%"/>
-								            <stop stop-color="#FF97AA" stop-opacity="0" offset="100%"/>
-								        </linearGradient>
-								    </defs>
-								    <g fill="none" fill-rule="evenodd">
-								        <path d="M31.12 7.482C28.327 19.146 19.147 28.326 7.483 31.121A12.04 12.04 0 0 1 .88 24.518C3.674 12.854 12.854 3.674 24.518.879a12.04 12.04 0 0 1 6.603 6.603z" fill="#312ECA"/>
-								        <path d="M28.874 3.922l-24.91 24.99a12.026 12.026 0 0 1-3.085-4.394C3.674 12.854 12.854 3.674 24.518.879a12.025 12.025 0 0 1 4.356 3.043z" fill="url(#logo-a)"/>
-								        <g opacity=".88">
-								            <path d="M31.12 24.518a12.04 12.04 0 0 1-6.602 6.603C12.854 28.326 3.674 19.146.879 7.482A12.04 12.04 0 0 1 7.482.88c11.664 2.795 20.844 11.975 23.639 23.639z" fill="url(#logo-b)"/>
-								            <path d="M24.518 31.12C12.854 28.327 3.674 19.147.879 7.483A12.015 12.015 0 0 1 3.46 3.57L28.47 28.5a12.016 12.016 0 0 1-3.951 2.62z" fill="url(#logo-c)"/>
-								        </g>
-								    </g>
+                        {{-- <h1 class="m-0">
+                            <a href="#"> --}}
+								{{-- <img src="{{ asset('storage/citizenSidelogo.png') }}" alt="citizenSidelogo" width="1966" height="1000"> --}}
+								{{-- <svg width="32" height="32" xmlns="http://www.w3.org/2000/svg">
+								<title>citizenSide</title>
+								<defs>
+									<linearGradient x1="114.674%" y1="39.507%" x2="-52.998%" y2="39.507%" id="logo-a">
+										<stop stop-color="#8D92FA" offset="0%"/>
+										<stop stop-color="#8D92FA" stop-opacity="0" offset="100%"/>
+									</linearGradient>
+									<linearGradient x1="93.05%" y1="19.767%" x2="15.034%" y2="85.765%" id="logo-b">
+										<stop stop-color="#FF3058" offset="0%"/>
+										<stop stop-color="#FF6381" offset="100%"/>
+									</linearGradient>
+									<linearGradient x1="32.716%" y1="-20.176%" x2="32.716%" y2="148.747%" id="logo-c">
+										<stop stop-color="#FF97AA" offset="0%"/>
+										<stop stop-color="#FF97AA" stop-opacity="0" offset="100%"/>
+									</linearGradient>
+								</defs>
+								<g fill="none" fill-rule="evenodd">
+									<path d="M31.12 7.482C28.327 19.146 19.147 28.326 7.483 31.121A12.04 12.04 0 0 1 .88 24.518C3.674 12.854 12.854 3.674 24.518.879a12.04 12.04 0 0 1 6.603 6.603z" fill="#312ECA"/>
+									<path d="M28.874 3.922l-24.91 24.99a12.026 12.026 0 0 1-3.085-4.394C3.674 12.854 12.854 3.674 24.518.879a12.025 12.025 0 0 1 4.356 3.043z" fill="url(#logo-a)"/>
+									<g opacity=".88">
+										<path d="M31.12 24.518a12.04 12.04 0 0 1-6.602 6.603C12.854 28.326 3.674 19.146.879 7.482A12.04 12.04 0 0 1 7.482.88c11.664 2.795 20.844 11.975 23.639 23.639z" fill="url(#logo-b)"/>
+										<path d="M24.518 31.12C12.854 28.327 3.674 19.147.879 7.483A12.015 12.015 0 0 1 3.46 3.57L28.47 28.5a12.016 12.016 0 0 1-3.951 2.62z" fill="url(#logo-c)"/>
+									</g>
+								</g>
 								</svg>
                             </a>
-                        </h1>
+                        </h1> --}}
                     </div>
                 </div>
             </div>
@@ -78,12 +79,9 @@
                 <div class="container">
                     <div class="hero-inner">
 						<div class="hero-copy">
-	                        <h1 class="hero-title mt-0">Landing template for Neighborhood Information System</h1>
-	                        <p class="hero-paragraph">Landing Page Bekerja di Semua Device, Jadi pengguna tidak usah khawatir, Dan dapatkan hasil yang indah selamanya</p>
+						<h1 class="hero-title mt-0">citizenSide</h1>
+						<p class="hero-paragraph">Government Service and Management Platform with Big Data for Citizens</p>
 							<div class="hero-form field field-grouped">
-								{{-- <div class="control control-expanded">
-									<input class="input" type="email" name="email" placeholder="Your best email&hellip;">
-								</div> --}}
 								<div class="control">
 									<a class="button button-primary button-block" href="{{ route('login') }}">Login</a>
 								</div>
@@ -97,7 +95,7 @@
 							</div>
 							<div class="hero-shape hero-shape-2">
 								<svg width="88" height="88" xmlns="http://www.w3.org/2000/svg" style="overflow:visible">
-								    <circle class="anime-element fadeup-animation" cx="44" cy="44" r="44" fill="#FFD2DA" fill-rule="evenodd"/>
+								<circle class="anime-element fadeup-animation" cx="44" cy="44" r="44" fill="#FFD2DA" fill-rule="evenodd"/>
 								</svg>
 							</div>
 							<div class="hero-main-shape">
@@ -306,10 +304,10 @@
                                 <div class="feature-inner">
                                     <div class="feature-icon" style="background:#FFD2DA;">
 										<svg width="88" height="88" xmlns="http://www.w3.org/2000/svg">
-										    <g fill="none" fill-rule="nonzero">
-										        <path d="M43 47v7a13 13 0 0 0 13-13v-7c-7.18 0-13 5.82-13 13z" fill="#FF6381"/>
-										        <path d="M32 41v4a9 9 0 0 0 9 9v-4a9 9 0 0 0-9-9z" fill="#FF97AA"/>
-										    </g>
+										<g fill="none" fill-rule="nonzero">
+											<path d="M43 47v7a13 13 0 0 0 13-13v-7c-7.18 0-13 5.82-13 13z" fill="#FF6381"/>
+											<path d="M32 41v4a9 9 0 0 0 9 9v-4a9 9 0 0 0-9-9z" fill="#FF97AA"/>
+										</g>
 										</svg>
                                     </div>
                                     <h4 class="feature-title h3-mobile mb-8">Friendly User Interface</h4>

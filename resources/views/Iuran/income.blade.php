@@ -86,10 +86,10 @@
                                                                     <label for="income_type" class="form-label">Income Type: </label>
                                                                     <select name="income_type" class="form-select form-select-sm" >
                                                                         <option value="">All</option>
-                                                                        <option value="Iuran Warga" {{ isset($_GET['income_type']) && $_GET['income_type'] == 'Iuran Warga' ? 'selected' : '' }}>Citizen's Fee</option>
-                                                                        <option value="Sumbangan" {{ isset($_GET['income_type']) && $_GET['income_type'] == 'Sumbangan' ? 'selected' : '' }}>Donation</option>
-                                                                        <option value="Usaha RW" {{ isset($_GET['income_type']) && $_GET['income_type'] == 'Usaha RW' ? 'selected' : '' }}>Comunity Business</option>
-                                                                        <option value="Bantuan Pemerintah" {{ isset($_GET['income_type']) && $_GET['income_type'] == 'Bantuan Pemerintah' ? 'selected' : '' }}>Government Support</option>
+                                                                        <option value="Citizens Fee" {{ isset($_GET['income_type']) && $_GET['income_type'] == 'Citizens Fee' ? 'selected' : '' }}>Citizen's Fee</option>
+                                                                        <option value="Donation" {{ isset($_GET['income_type']) && $_GET['income_type'] == 'Donation' ? 'selected' : '' }}>Donation</option>
+                                                                        <option value="Community Business" {{ isset($_GET['income_type']) && $_GET['income_type'] == 'Community Business' ? 'selected' : '' }}>Comunity Business</option>
+                                                                        <option value="Goverment Support" {{ isset($_GET['income_type']) && $_GET['income_type'] == 'Goverment Support' ? 'selected' : '' }}>Government Support</option>
                                                                     </select>
                                                                 </div>
                                                                 <div class="col-sm-3">
@@ -113,7 +113,7 @@
                                                         <table class="table">
                                                             <thead>
                                                                 <tr>
-                                                                    <th scope="col">No</th>
+                                                                    <th scope="col">Number</th>
                                                                     <th scope="col">Date</th>
                                                                     <th scope="col">Income Name</th>
                                                                     <th scope="col">Income Type</th>
@@ -132,7 +132,7 @@
                                                                     <td>{{ $d->income_name }}</td>
                                                                     <td>{{ $d->income_type }}</td>
                                                                     <td>{{ $d->description }}</td>
-                                                                    <td>Rp. {{ $d->inflow }}</td>
+                                                                    <td>RMB {{ $d->inflow }}</td>
                                                                     <td>
                                                                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalEditIncome{{ $d->income_id }}">
                                                                             <i class="fas fa-pen"></i>

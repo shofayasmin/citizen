@@ -15,7 +15,7 @@ return new class extends Migration
             $table->date('date');
             $table->id('income_id');
             $table->string('income_name');
-            $table->enum('income_type', ['Iuran Warga', 'Sumbangan', 'Usaha RW', 'Bantuan Pemerintah']);
+            $table->enum('income_type', ['Citizens Fee', 'Donation', 'Community Business', 'Goverment Support']);
             $table->integer('inflow');
             $table->string('description');
             $table->timestamps();

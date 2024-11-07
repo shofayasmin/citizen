@@ -9,11 +9,11 @@ $(document).ready(function() {
             labels: ['Islam','Konghucu','Kristen','Buddha','Katolik'],
             datasets: [{
                 
-                label: 'Laki',
+                label: 'Male',
                 data: [3, 6, 4, 5, 6],
                 backgroundColor: '#5780F7'
             }, {
-                label: 'Perempuan',
+                label: 'Female',
                 data: [2, 4, 2, 4, 2],
                 backgroundColor: '#F4F4F5'
             }]

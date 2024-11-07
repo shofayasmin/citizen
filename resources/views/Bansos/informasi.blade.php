@@ -45,7 +45,20 @@
         <div class="row">
             <div class="col-xl">
                 <div class="container">
-                    
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="page-title">
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb breadcrumb-separator-1">
+                                        <li class="breadcrumb-item"><a href="{{ route('dashboard.index') }}">Dashboard</a></li>
+                                        <li class="breadcrumb-item"><a href="#">Social Donation</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">Newest Information of Social Donation</li>
+                                    </ol>
+                                </nav>
+                                <h3>Newest Information of Social Donation</h3>
+                            </div>
+                        </div>
+                    </div> 
                     
             
                         <div class="row row-cols-3">

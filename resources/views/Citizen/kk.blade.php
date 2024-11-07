@@ -44,7 +44,8 @@
                         <div class="page-title">
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb breadcrumb-separator-1">
-                                    <li class="breadcrumb-item"><a href="#">citizenship</a></li>
+                                    <li class="breadcrumb-item"><a href="{{ route('dashboard.index') }}">Dashboard</a></li>
+                                    <li class="breadcrumb-item"><a href="#">Citizenship</a></li>
                                     <li class="breadcrumb-item active" aria-current="page">Family Card</li>
                                 </ol>
 

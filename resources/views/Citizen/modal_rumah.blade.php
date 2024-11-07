@@ -48,28 +48,28 @@
             </div>
             <div class="form-group" style="margin-left: 10px; margin-right: 10px;">
                 <label for="exampleInputEmail1">Address</label>
-                <input type="form" name="alamat" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="jl.smerewing jos 123">
+                <input type="form" name="alamat" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Address">
                 @error( 'alamat' )
                     <small>{{ $message }}</small>
                 @enderror
             </div>               
             <div class="form-group" style="margin-left: 10px; margin-right: 10px;">
                 <label for="exampleInputEmail1">Building Size</label>
-                <input type="number" name="luas_bangunan" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Cukup masukkan Angka saja">
+                <input type="number" name="luas_bangunan" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Building Size (Just enter numbers)">
                 @error( 'luas_bangunan' )
                     <small>{{ $message }}</small>
                 @enderror
             </div>               
             <div class="form-group" style="margin-left: 10px; margin-right: 10px;">
                 <label for="exampleInputEmail1">Land Size</label>
-                <input type="number" name="luas_tanah" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Cukup masukkan Angka saja">
+                <input type="number" name="luas_tanah" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Land Size (Just enter numbers)">
                 @error( 'luas_tanah' )
                     <small>{{ $message }}</small>
                 @enderror
             </div>               
             <div class="form-group" style="margin-left: 10px; margin-right: 10px;">
                 <label for="exampleInputEmail1">Member of Family</label>
-                <input type="number" name="jumlah_anggota_kk" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Masukkan total">
+                <input type="number" name="jumlah_anggota_kk" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter The Total">
                 @error( 'jumlah_anggota_kk' )
                     <small>{{ $message }}</small>
                 @enderror
@@ -98,35 +98,35 @@
             @method("PUT")
             <div class="form-group" style="margin-left: 10px; margin-right: 10px;">
                 <label for="exampleInputEmail1">Owner Name</label>
-                <input type="form" name="nama_pemilik" value="{{ $d->nama_pemilik }}" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Masukkan Nama Pemilik">
+                <input type="form" name="nama_pemilik" value="{{ $d->nama_pemilik }}" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Owner Name">
                 @error( 'nama_pemilik' )
                     <small>{{ $message }}</small>
                 @enderror
             </div>
             <div class="form-group" style="margin-left: 10px; margin-right: 10px;">
-                <label for="exampleInputEmail1"><Address></Address></label>
-                <input type="form" name="alamat" value="{{ $d->alamat }}" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="jl.smerewing jos 123">
+                <label for="exampleInputEmail1">Address</label>
+                <input type="form" name="alamat" value="{{ $d->alamat }}" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Address">
                 @error( 'alamat' )
                     <small>{{ $message }}</small>
                 @enderror
             </div>               
             <div class="form-group" style="margin-left: 10px; margin-right: 10px;">
                 <label for="exampleInputEmail1">Building Size</label>
-                <input type="form" name="luas_bangunan" value="{{ $d->luas_bangunan }}" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Cukup masukkan Angka saja">
+                <input type="form" name="luas_bangunan" value="{{ $d->luas_bangunan }}" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Building Size (Just enter numbers)">
                 @error( 'luas_bangunan' )
                     <small>{{ $message }}</small>
                 @enderror
             </div>               
             <div class="form-group" style="margin-left: 10px; margin-right: 10px;">
                 <label for="exampleInputEmail1">Land Size</label>
-                <input type="form" name="luas_tanah" value="{{ $d->luas_tanah }}" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Cukup masukkan Angka saja">
+                <input type="form" name="luas_tanah" value="{{ $d->luas_tanah }}" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Land Size (Just enter numbers)">
                 @error( 'luas_tanah' )
                     <small>{{ $message }}</small>
                 @enderror
             </div>               
             <div class="form-group" style="margin-left: 10px; margin-right: 10px;">
                 <label for="exampleInputEmail1">Number of Family Member</label>
-                <input type="form" name="jumlah_anggota_kk" value="{{ $d->jumlah_anggota_kk }}" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Masukkan total">
+                <input type="form" name="jumlah_anggota_kk" value="{{ $d->jumlah_anggota_kk }}" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter The Total">
                 @error( 'jumlah_anggota_kk' )
                     <small>{{ $message }}</small>
                 @enderror

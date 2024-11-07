@@ -34,7 +34,6 @@
         
         @include('layouts.sidebar')
         
-        
         @include('layouts.header')
 
         <div class="lime-container">
@@ -44,10 +43,10 @@
                         <div class="col-md-12">
                             <div class="page-title">
                                 <nav aria-label="breadcrumb">
-                                  <ol class="breadcrumb breadcrumb-separator-1">
-                                    <li class="breadcrumb-item"><a href="#">msme</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Manage MSME</li>
-                                  </ol>
+                                <ol class="breadcrumb breadcrumb-separator-1">
+                                <li class="breadcrumb-item"><a href="#">MSME</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Manage MSME</li>
+                                </ol>
                                 </nav>
                                 <h3>Manage MSME</h3>
                                 

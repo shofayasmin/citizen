@@ -20,4 +20,8 @@ class Acara extends Model
     {
         return $this->belongsToMany(User::class, 'acara_participants', 'acara_id', 'user_id');
     }
+
+    // public function notifications(){
+    //     return $this->belongsToMany(User::class, 'user_event_notifications', 'user_id','acara_id');
+    // }
 }

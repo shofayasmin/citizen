@@ -23,7 +23,7 @@ class LaporanFactory extends Factory
             'pengirim' => Warga::inRandomOrder()->first()?->nik,
             'gambar' => fake()->image(null, 120, 80, 'animals', true, true, 'cats', true, 'jpg'),
             'deskripsi' => fake()->unique()->text(100),
-            'status' => fake()->randomElement(['Selesai','Belum Selesai']),
+            'status' => fake()->randomElement(['Finished','In Progress']),
         ];
     }
 }

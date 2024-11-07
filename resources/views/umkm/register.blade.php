@@ -18,7 +18,7 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link href="{{ asset('lime/theme/assets/plugins/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
         <link href="{{ asset('lime/theme/assets/plugins/font-awesome/css/all.min.css')}}" rel="stylesheet">
-      
+
         <!-- Theme Styles -->
         <link href="{{ asset('lime/theme/assets/css/lime.min.css')}}" rel="stylesheet">
         <link href="{{ asset('lime/theme/assets/css/custom.css')}}" rel="stylesheet">
@@ -34,9 +34,6 @@
         
         @include('layouts.sidebar')
         
-        
-        
-        
         @include('layouts.header')
 
         <div class="lime-container">
@@ -48,10 +45,10 @@
                                 <nav aria-label="breadcrumb">
                                   <ol class="breadcrumb breadcrumb-separator-1">
                                     <li class="breadcrumb-item"><a href="#">UMKM</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Tambah UMKM</li>
+                                    <li class="breadcrumb-item active" aria-current="page">Add Data</li>
                                   </ol>
                                 </nav>
-                                <h3>Forms</h3>
+                                <h3>UMKM Forms</h3>
                                 
                             </div>
                         </div>
@@ -75,7 +72,7 @@
                                         </div>
                                         <div class="form-group">
                                             <label for="exampleInputEmail1">UMKM Name</label>
-                                            <input type="form" name="umkm" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Masukan umkm">
+                                            <input type="form" name="umkm" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter MSME Name">
                                             
                                             @error('umkm')
                                                 <small>{{ $message }}</small>
@@ -83,14 +80,14 @@
                                         </div>
                                         <div class="form-group">
                                             <label for="exampleFormControlTextarea1">Description</label>
-                                            <textarea class="form-control" name="deskripsi" id="exampleFormControlTextarea1" rows="3" placeholder="Masukkan deskripsi"></textarea>
+                                            <textarea class="form-control" name="deskripsi" id="exampleFormControlTextarea1" rows="3" placeholder="Enter The Description"></textarea>
                                             @error('deskripsi')
                                                 <small>{{ $message }}</small>
                                             @enderror
                                         </div>
                                         <div class="form-group">
                                             <label for="exampleFormControlTextarea1">MSME Type</label>
-                                            <textarea class="form-control" name="tipe_umkm" id="exampleFormControlTextarea1" rows="3" placeholder="Masukkan tipe_umkm"></textarea>
+                                            <textarea class="form-control" name="tipe_umkm" id="exampleFormControlTextarea1" rows="3" placeholder="Enter MSME Type"></textarea>
                                             @error('tipe_umkm')
                                                 <small>{{ $message }}</small>
                                             @enderror

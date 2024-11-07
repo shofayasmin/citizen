@@ -38,17 +38,17 @@
         <div class="modal-body">
             <div class="form-group">
             <label for="judul">Judul Acara</label>
-            <input type="text" class="form-control" id="judul" name="judul" placeholder="Masukkan Judul Acara">
+            <input type="text" class="form-control" id="judul" name="judul" placeholder="Enter Event Title">
             </div>
             <div class="form-group">
             <label for="deskripsi">Deskripsi</label>
-            <textarea class="form-control" id="deskripsi" name="deskripsi" rows="3" placeholder="Masukkan Deskripsi Acara"></textarea>
+            <textarea class="form-control" id="deskripsi" name="deskripsi" rows="3" placeholder="Enter Event Description"></textarea>
             </div>
             <div class="form-group">
             <label for="tipe_acara">Tipe Acara</label>
             <select class="form-control" id="tipe_acara" name="tipe_acara">
-                <option value="Kegiatan">Kegiatan</option>
-                <option value="Informasi">Informasi</option>
+                <option value="Activity">Activity</option>
+                <option value="Information">Information</option>
             </select>
             </div>
             <div class="form-group">
@@ -95,8 +95,8 @@
             <div class="form-group" style="margin-left: 10px; margin-right: 10px;">
                 <label for="exampleFormControlSelect1">Tipe Acara</label>
                 <select class="form-control custom-select" name="tipe_acara" value="{{ $d->tipe_acara }}" id="exampleFormControlSelect1">
-                    <option>Kegiatan</option>
-                    <option>Informasi</option>
+                    <option>Activity</option>
+                    <option>Information</option>
                 </select>
                 @error('tipe_acara')
                     <small>{{ $message }}</small>
@@ -132,10 +132,10 @@
                 </div>
                 <div class="modal-body mb-4">
                     <p>{{ $d->deskripsi }}</p>
-                    @if($d->tipe_acara != 'Informasi')
+                    @if($d->tipe_acara != 'Information')
                         <form action="{{ route('acara.ikuti', $d->id_acara) }}" method="POST">
                             @csrf
-                            <button type="submit" class="btn btn-link">Ikut Kegiatan</button>
+                            <button type="submit" class="btn btn-link">Join Event</button>
                             <button type="button" class="btn btn-link show-participants-btn" data-toggle="modal" data-target="#participantsModal_{{ $d->id_acara }}">Show Participants</button>
                         </form>
                     @endif

@@ -18,10 +18,10 @@ class IuranFactory extends Factory
     {
         return [
             'tanggal' => fake()->dateTimeThisYear('+1 months'),
-            'pemasukan' => fake()->numberBetween(1, 100) * 1000000,  // Nilai pemasukan acak antara 1000 dan 10000
-            'pengeluaran' => fake()->numberBetween(1, 100) * 1000000,  // Nilai pengeluaran acak antara 500 dan 5000
+            'income' => fake()->numberBetween(1, 100) * 1000000,  // Nilai pemasukan acak antara 1000 dan 10000
+            'outcome' => fake()->numberBetween(1, 100) * 1000000,  // Nilai pengeluaran acak antara 500 dan 5000
             'total' => function (array $attributes) {
-                return $attributes['pemasukan'] - $attributes['pengeluaran'];
+                return $attributes['income'] - $attributes['outcome'];
             },
             'deskripsi' => fake()->text(50),
         ];

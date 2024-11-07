@@ -50,7 +50,6 @@
                                     <li class="breadcrumb-item active" aria-current="page">#</li>
                                     
                                 </ol>
-                                
                                 </nav>
                                 <h3>Payment</h3>
 

@@ -14,8 +14,8 @@ return new class extends Migration
         Schema::create('iurans', function (Blueprint $table) {
             $table->id('iuran_id');
             $table->date('tanggal');
-            $table->bigInteger('pemasukan');
-            $table->bigInteger('pengeluaran');
+            $table->bigInteger('income');
+            $table->bigInteger('outcome');
             $table->bigInteger('total');
             $table->text('deskripsi');
             $table->timestamps();

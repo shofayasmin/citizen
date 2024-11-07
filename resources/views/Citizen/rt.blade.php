@@ -46,12 +46,13 @@
                         <div class="page-title">
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb breadcrumb-separator-1">
-                                    <li class="breadcrumb-item"><a href="#">Citizen</a></li>
+                                    <li class="breadcrumb-item"><a href="{{ route('dashboard.index') }}">Dashboard</a></li>
+                                    <li class="breadcrumb-item"><a href="#">Citizenship</a></li>
                                     <li class="breadcrumb-item active" aria-current="page">Neighborhood </li>
 
                                 </ol>
                             </nav>
-                            <h3>Forms</h3>
+                            <h3>Neighborhood Data</h3>
 
                         </div>
                     </div>
@@ -81,7 +82,7 @@
                                                 @endif
 
                                                 <h5 class="card-title">Neighborhood Data</h5>
-                                                <p>Here is the data of RT data from RW 003</code>.</p>
+                                                <p>Here is the data of neighborhood data from 003</code>.</p>
                                                 @if ($errors->has('no_kk'))
                                                     <div class="alert alert-danger">
                                                         {{ $errors->first('no_kk') }}

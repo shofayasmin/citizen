@@ -17,9 +17,9 @@ class AcaraFactory extends Factory
     public function definition(): array
     {
         return [
-            'judul' => fake()->randomElement(['Gotong Royong', 'Jalan Sehat', 'Bazar', 'Lomba', 'Rapat Warga']),
+            'judul' => fake()->randomElement(['Medical Checkup', 'Fun Walk', 'Bazaar', 'Competition', 'Community Meeting']),
             'deskripsi' => fake()->text(),
-            'tipe_acara' => fake()->randomElement(['Informasi', 'Kegiatan'])
+            'tipe_acara' => fake()->randomElement(['Information', 'Activity'])
         ];
     }
 }

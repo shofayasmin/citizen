@@ -32,7 +32,7 @@
         <![endif]-->
 </head>
 
-<body>
+<body onload="markNotificationsAsRead()">
 
     @include('layouts.sidebar')
 
@@ -48,6 +48,7 @@
                         <div class="page-title">
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb breadcrumb-separator-1">
+                                    <li class="breadcrumb-item active"><a href="{{ route('dashboard.index') }}">Dashboard</a></li>
                                     <li class="breadcrumb-item"><a href="#">Event</a></li>
                                     <li class="breadcrumb-item active" aria-current="page">View</li>
                                 </ol>
@@ -159,6 +160,28 @@
         <script src="{{ asset('lime/theme/assets/plugins/bootstrap/js/bootstrap.min.js') }}"></script>
         <script src="{{ asset('lime/theme/assets/plugins/jquery-slimscroll/jquery.slimscroll.min.js') }}"></script>
         <script src="{{ asset('lime/theme/assets/js/lime.min.js') }}"></script>
-</body>
+
+        {{-- <script>
+            function markNotificationsAsRead() {
+                $.ajax({
+                    url: "{{ route('notifications.markAsRead') }}",
+                    type: "POST",
+                    data: {
+                        _token: "{{ csrf_token() }}"
+                    },
+                    success: function(response) {
+                        console.log("Notifications marked as read");
+                    },
+                    error: function(xhr) {
+                        console.error("Failed to mark notifications as read");
+                    }
+                });
+            }
+        
+            // Call the function on page load
+            document.addEventListener('DOMContentLoaded', function() {
+                markNotificationsAsRead();
+            });
+        </script> --}}
 
 </html>

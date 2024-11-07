@@ -45,21 +45,21 @@
                     </div>
                     <div class="form-group" style="margin-left: 10px; margin-right: 10px;">
                         <label for="expenditure_name">Outcome Name</label>
-                        <input type="text" class="form-control" id="expenditure_name" name="expenditure_name" aria-describedby="emailHelp" placeholder="Masukkan Nama Pengeluaran">
+                        <input type="text" class="form-control" id="expenditure_name" name="expenditure_name" aria-describedby="emailHelp" placeholder="Enter The Outcome Name">
                         @error( 'expenditure_name' )
                             <small>{{ $message }}</small>
                         @enderror
                     </div>
                     <div class="form-group" style="margin-left: 10px; margin-right: 10px;">
                         <label for="amount">Total</label>
-                        <input type="number" class="form-control" id="amount" name="amount" aria-describedby="emailHelp" placeholder="Masukkan Nominal Pengeluaran">
+                        <input type="number" class="form-control" id="amount" name="amount" aria-describedby="emailHelp" placeholder="Enter The Nominal Of The Outcome">
                         @error( 'amount' )
                             <small>{{ $message }}</small>
                         @enderror
                     </div>
                     <div class="form-group" style="margin-left: 10px; margin-right: 10px;">
                         <label for="description">Description</label>
-                        <input class="form-control" id="description" name="description" rows="3"aria-describedby="emailHelp" placeholder="Masukkan Deskripsi"></input>
+                        <input class="form-control" id="description" name="description" rows="3"aria-describedby="emailHelp" placeholder="Enter The Description"></input>
                         @error( 'description' )
                             <small>{{ $message }}</small>
                         @enderror

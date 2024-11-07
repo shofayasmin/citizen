@@ -18,9 +18,9 @@ class UmkmFactory extends Factory
     {
         return [
             'nama' => fake()->name,
-            'umkm' => fake()->randomElement(['Toko Kebab 99% Halal','Alcohol Store 80% aman','Rokok electric bahan dasar Air']),
+            'umkm' => fake()->randomElement(['Delicious Halal Restaurant','Aurora Stationery Shop','Winter Milk Tea']),
             // 'gambar' => fake()->image(null, 120, 80, 'animals', true, true, 'cats', true, 'jpg'),
-            'tipe_umkm' => fake()->randomElement(['Makanan dan Minuman','Kerajinan Tangan','Fashion dan Aksesoris','Teknologi','Jasa','Pertanian dan Perikanan','Perdagangan','Pendidikan','Kesehatan','Pariwisata']),
+            'tipe_umkm' => fake()->randomElement(['Food and Beverages','Handicrafts','Fashion and Accessories','Technology','Services','Agriculture and Fisheries','Trade','Education','Health','Tourism']),
             'deskripsi' => fake()->text(50),
         ];
     }

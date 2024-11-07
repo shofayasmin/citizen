@@ -16,7 +16,7 @@ class AcaraSeeder extends Seeder
         Acara::create([
             'judul' => 'kedatangan 01',
             'deskripsi' => 'halohalohalhalohaodhaohdadhalasdadadadas',
-            'tipe_acara' => 'Informasi',
+            'tipe_acara' => 'Information',
         ]);
     }
 }

@@ -18,11 +18,11 @@ return new class extends Migration
             $table->string('nama_lengkap',40);
             $table->text('tempat_lahir');
             $table->text('tanggal_lahir');
-            $table->enum('jenis_kelamin',['Laki-Laki','Perempuan']);
+            $table->enum('jenis_kelamin',['Male','Female']);
             $table->text('alamat');
             $table->string('agama',15);
             $table->string('nomor_telepon');
-            $table->enum('status', ['Belum Kawin', 'Kawin', 'Cerai Hidup', 'Cerai Mati']);
+            $table->enum('status', ['Single', 'Married', 'Divorce', 'Dead Divorce']);
             $table->string('pekerjaan',30);
             $table->integer('pendapatan')->nullable();
             $table->string('kewarganegaraan',20);

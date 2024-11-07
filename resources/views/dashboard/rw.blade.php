@@ -91,7 +91,7 @@
                         <div class="col-md-3">
                             <div class="card stat-card">
                                 <div class="card-body">
-                                    <h5 class="card-title">KK</h5>
+                                    <h5 class="card-title">Family Card</h5>
                                     <h2 class="float-right">{{ $totalKk }}</h2>
                                     <p>Number of family cards</p>
                                     
@@ -174,9 +174,9 @@
                                                     <td>{{ $counter++ }}</td>
                                                     <td>{{ $l->judul }}</td>
                                                     <td>
-                                                        @if($l->status == 'Selesai')
+                                                        @if($l->status == 'Finished')
                                                         <span class="badge badge-success">{{ $l->status }}</span>
-                                                        @elseif($l->status == 'Not Yet Finished')
+                                                        @elseif($l->status == 'In Progress')
                                                         <a href="{{ route('laporan.view') }}" class="badge badge-danger">{{ $l->status }}</a>
                                                         @endif
                                                     </td>
@@ -345,10 +345,10 @@
                     }
                 },
                 series: [{
-                    name: "Pemasukan",
+                    name: "Income",
                     data: incomeData
                 }, {
-                    name: "Pengeluaran",
+                    name: "Outcome",
                     data: expenditureData
                 }],
                 dataLabels: {
@@ -358,7 +358,7 @@
                     curve: 'straight'
                 },
                 title: {
-                    text: 'Grafik Pemasukan dan Pengeluaran',
+                    text: 'Income and Outcome Chart',
                     align: 'left'
                 },
                 grid: {
@@ -430,11 +430,11 @@
                     data: {
                         labels: ['Islam','Konghucu','Kristen','Buddha','Katolik'],
                         datasets: [{
-                            label: 'Laki - Laki',
+                            label: 'Male',
                             data: [3, 6, 4, 5, 6],
                             backgroundColor: '#5780F7'
                         }, {
-                            label: 'Perempuan',
+                            label: 'Female',
                             data: [2, 4, 2, 4, 2],
                             backgroundColor: '#F4F4F5'
                         }]
@@ -479,7 +479,7 @@
                 },
                 colors: ['#3A5794', '#A5C351', '#E14A84'],
                 series: [{
-                    name: 'Bansos',
+                    name: 'Donations',
                     type: 'column',
                     data: dataBansos
                 }],

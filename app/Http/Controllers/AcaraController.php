@@ -3,11 +3,14 @@
 namespace App\Http\Controllers;
 
 use App\Models\Acara;
+use App\Models\User;
 use App\Models\acara_participant;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\DB;
+
 use Intervention\Image\Facades\Image;
 
 class AcaraController extends Controller
@@ -73,12 +76,46 @@ class AcaraController extends Controller
         $data['tipe_acara'] = $request->tipe_acara;
         $data['image'] = $image;
 
-
-        Acara::create($data);
+        // $acara = Acara::create($data);
+        // $this->sendNotification($acara);
 
         return redirect()->route('acara.manage');
+    
     }
+    // private function sendNotification($acara)
+    // {
+    //     $users = User::all();
+    //     foreach ($users as $user) {
+    //         DB::table('user_event_notifications')->insert([
+    //             'user_id' => $user->id,
+    //             'acara_id' => $acara->id_acara,  // Use id_acara if that's the correct primary key
+    //             'is_read' => false,
+    //             'created_at' => now(),
+    //             'updated_at' => now(),
+    //         ]);
+    //     }
+    // }
+    // public function markNotificationsAsRead(Request $request)
+    // {
+    //     $userId = Auth::id();
+    //     DB::table('user_event_notifications')
+    //         ->where('user_id', $userId)
+    //         ->where('is_read', false)
+    //         ->update(['is_read' => true, 'updated_at' => now()]);
 
+    //     return response()->json(['status' => 'success']);
+    // }
+
+
+    // public function index()
+    // {
+    //     $unreadEventCount = DB::table('user_event_notifications')
+    //         ->where('user_id', auth()->id())
+    //         ->where('is_read', false)
+    //         ->count();
+
+    //     return view('acara.view', compact('unreadEventCount'));
+    // }
     public function edit_acara(Request $request,$id)
     {
         $data = Acara::find($id);

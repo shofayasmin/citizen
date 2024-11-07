@@ -43,16 +43,14 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="page-title">
-                                
                                 <nav aria-label="breadcrumb">
-                                  <ol class="breadcrumb breadcrumb-separator-1">
-                                    <li class="breadcrumb-item"><a href="#">Kependudukan</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Rumah</li>
-                                    
-                                  </ol>
-                                  
+                                    <ol class="breadcrumb breadcrumb-separator-1">
+                                        <li class="breadcrumb-item"><a href="{{ route('dashboard.index') }}">Dashboard</a></li>
+                                        <li class="breadcrumb-item"><a href="#">Citizenship</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">House</li>      
+                                    </ol>
                                 </nav>
-                                <h3>Forms</h3>
+                                <h3>House Data</h3>
                                 
                             </div>
                         </div>
@@ -82,7 +80,7 @@
                                                         </div>
                                                     @endif
                                                     <h5 class="card-title">House Data</h5>
-                                                    <p>Here are the house data of RW 003</code>.</p>
+                                                    <p>Here are the house data of neighborhood 003</code>.</p>
                                                     <div class="text-right mb-3">
                                                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#rumah_tambah">
                                                             Add Data

@@ -31,59 +31,6 @@
     </head>
     <body>
         
-        {{-- <div class="lime-sidebar">
-            <div class="lime-sidebar-inner slimscroll">
-                <ul class="accordion-menu">
-                    <li class="sidebar-title">
-                        Apps
-                    </li>
-                    <li>
-                        <a href="{{('/home')}}" ><i class="material-icons">dashboard</i>Dashboard</a>
-                    </li>
-                    <li>
-                        <a href="profile.html"><i class="material-icons">person_outline</i>Laporan</a>
-                    </li>
-
-                    <li class="page">
-                        <a href="#"><i class="material-icons">inbox</i>Acara<i class="material-icons has-sub-menu">keyboard_arrow_left</i></a>
-                        <ul class="sub-menu">
-                            <li>
-                                <a href="/acara/manage" class="active" onclick="return false;">Manage</a>
-                            </li>
-                            <li>
-                                <a href="/acara/view">View</a>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li>
-                        <a href="todo.html"><i class="material-icons">done_all</i>Bansos</a>
-                    </li>
-                    <li>
-                        <a href="file-manager.html"><i class="material-icons">cloud_queue</i>Iuran</a>
-                    </li>
-                </ul>
-            </div>
-        </div> --}}
-        
-        
-        {{-- <div class="theme-settings-sidebar">
-            <div class="theme-settings-inner">
-                <h3 class="theme-sidebar-title">Themes</h3>
-                <p class="themes-info">Select a demo</p>
-                
-                <a class="theme-item active" href="#">
-                    <img src="{{ asset('lime/theme/assets/images/themes/1.png')}}" alt="">
-                    <h4 class="theme-title">Classic</h4>
-                </a>
-                <a class="theme-item" href="#">
-                    <div class="coming-theme">Coming Soon</div>
-                    <img src="{{ asset('lime/theme/assets/images/themes/2.png')}}" alt="">
-                    <h4 class="theme-title">Dark Theme</h4>
-                </a>
-            </div>
-        </div> --}}
-
         @include('layouts.sidebar')
         
         @include('layouts.header')
@@ -95,10 +42,11 @@
                         <div class="col-md-12">
                             <div class="page-title">
                                 <nav aria-label="breadcrumb">
-                                  <ol class="breadcrumb breadcrumb-separator-1">
+                                <ol class="breadcrumb breadcrumb-separator-1">
+                                    <li class="breadcrumb-item active"><a href="{{ route('dashboard.index') }}">Dashboard</a></li>
                                     <li class="breadcrumb-item"><a href="#">Event</a></li>
                                     <li class="breadcrumb-item active" aria-current="page">Manage</li>
-                                  </ol>
+                                </ol>
                                 </nav>
                                 <h3>Event</h3>
                                 
@@ -113,8 +61,8 @@
                                         <div class="col-xl">
                                             <div class="card">
                                                 <div class="card-body">
-                                                    <h5 class="card-title">EVENT Data</h5>
-                                                    <p>The following is the EVENTS Data</code>.</p>
+                                                    <h5 class="card-title">Event Data</h5>
+                                                    <p>The following is the Events Data</code>.</p>
                                                     <div class="text-right mb-3">
                                                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalTambah">
                                                             Add Event
@@ -129,8 +77,6 @@
                                                                     <th scope="col">Title</th>
                                                                     <th scope="col">Description</th>
                                                                     <th scope="col">Event Type</th>
-                                                                    
-                                                                    
                                                                 </tr>
                                                             </thead>
                                                             <tbody>

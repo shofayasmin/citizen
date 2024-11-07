@@ -37,37 +37,37 @@
             @csrf
             <div class="form-group" style="margin-left: 10px; margin-right: 10px;">
                 <label for="exampleInputEmail1">ID Number</label>
-                <input type="text" name="nik" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Masukkan Nama Pemilik">
+                <input type="text" name="nik" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter ID Number">
                 @error( 'nik' )
                     <small>{{ $message }}</small>
                 @enderror
             </div>   
             <div class="form-group" style="margin-left: 10px; margin-right: 10px;">
                 <label for="exampleInputEmail1">Family Card ID</label>
-                <input type="form" name="no_kk" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="12345678912345">
+                <input type="form" name="no_kk" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Family Card ID">
                 @error( 'no_kk' )
                     <small>{{ $message }}</small>
                 @enderror
             </div>           
             <div class="form-group" style="margin-left: 10px; margin-right: 10px;">
                 <label for="exampleInputEmail1">Full Name</label>
-                <input type="text" name="nama_lengkap" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Cukup masukkan Angka saja">
+                <input type="text" name="nama_lengkap" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Full Name">
                 @error( 'nama_lengkap' )
                     <small>{{ $message }}</small>
                 @enderror
             </div>                
-              
+
             <div class="row mb-3" style="margin-left: 10px; margin-right: 10px;">
                 <div class="col">
                     <label for="exampleInputEmail1">Birthplace</label>
-                    <input type="text" name="tempat_lahir" class="form-control" placeholder="Tempat Lahir">
+                    <input type="text" name="tempat_lahir" class="form-control" placeholder="Birthplace">
                     @error( 'tempat_lahir' )
                         <small>{{ $message }}</small>
                     @enderror
                 </div>
                 <div class="col">
                     <label for="exampleInputEmail1">Birth Date</label>
-                    <input type="date" name="tanggal_lahir" class="form-control" placeholder="Tanggal Lahir">
+                    <input type="date" name="tanggal_lahir" class="form-control" placeholder="Birth Date">
                     @error( 'tanggal_lahir' )
                         <small>{{ $message }}</small>
                     @enderror
@@ -86,7 +86,7 @@
             </div>             
             <div class="form-group" style="margin-left: 10px; margin-right: 10px;">
                 <label for="exampleInputEmail1">Address</label>
-                <input type="text" name="alamat" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Cukup masukkan Angka saja">
+                <input type="text" name="alamat" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Address">
                 @error( 'alamat' )
                     <small>{{ $message }}</small>
                 @enderror
@@ -95,11 +95,11 @@
                 <label for="exampleFormControlSelect1">Religion</label>
                 <select class="form-control custom-select" name="agama" id="exampleFormControlSelect1">
                     <option>Islam</option>
-                    <option>Christ</option>
+                    <option>Christian</option>
                     <option>Catholic</option>
                     <option>Hindu</option>
-                    <option>Buddha</option>
-                    <option>Khongucu</option>
+                    <option>Buddhist</option>
+                    <option>Confucian</option>
                     <option>None</option>
                 </select>
                 @error( 'agama' )
@@ -109,7 +109,7 @@
                 
             <div class="form-group" style="margin-left: 10px; margin-right: 10px;">
                 <label for="exampleInputEmail1">No. Telephone</label>
-                <input type="text" name="nomor_telepon" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Cukup masukkan Angka saja">
+                <input type="text" name="nomor_telepon" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter No. Telephone">
                 @error( 'nomor_telepon' )
                     <small>{{ $message }}</small>
                 @enderror
@@ -118,10 +118,10 @@
             <div class="form-group" style="margin-left: 10px; margin-right: 10px;">
                 <label for="exampleFormControlSelect1">Status</label>
                 <select class="form-control custom-select" name="status" id="exampleFormControlSelect1">
-                    <option>Unmarried</option>
+                    <option>Single</option>
                     <option>Married</option>
-                    <option>Cerai Hidup</option>
-                    <option>Cerai</option>
+                    <option>Divorce</option>
+                    <option>Dead Divorce</option>
                 </select>
                 @error( 'status' )
                     <small>{{ $message }}</small>
@@ -129,26 +129,25 @@
             </div>               
             <div class="form-group" style="margin-left: 10px; margin-right: 10px;">
                 <label for="exampleInputEmail1">Job</label>
-                <input type="text" name="pekerjaan" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Just enter Numbers">
+                <input type="text" name="pekerjaan" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Job">
                 @error( 'pekerjaan' )
                     <small>{{ $message }}</small>
                 @enderror
             </div>               
             <div class="form-group" style="margin-left: 10px; margin-right: 10px;">
                 <label for="exampleInputEmail1">Nationality</label>
-                <input type="text" name="kewarganegaraan" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Just enter Numbers">
+                <input type="text" name="kewarganegaraan" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Nationality">
                 @error( 'kewarganegaraan' )
                     <small>{{ $message }}</small>
                 @enderror
             </div>               
             <div class="form-group" style="margin-left: 10px; margin-right: 10px;">
                 <label for="exampleInputEmail1">Domicile</label>
-                <input type="text" name="domisili" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Just enter Numbers">
+                <input type="text" name="domisili" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Domicile">
                 @error( 'domisili' )
                     <small>{{ $message }}</small>
                 @enderror
             </div>               
-                         
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
     </div>
@@ -170,37 +169,37 @@
             @method('PUT')
             <div class="form-group" style="margin-left: 10px; margin-right: 10px;">
                 <label for="exampleInputEmail1">ID Number</label>
-                <input type="text" name="nik" value="{{ $d->nik }}" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Owner Name">
+                <input type="text" name="nik" value="{{ $d->nik }}" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter ID Number">
                 @error( 'nik' )
                     <small>{{ $message }}</small>
                 @enderror
             </div>   
             <div class="form-group" style="margin-left: 10px; margin-right: 10px;">
                 <label for="exampleInputEmail1">Family Card ID</label>
-                <input type="form" name="no_kk" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="12345678912345">
+                <input type="form" name="no_kk" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Family Card ID">
                 @error( 'no_kk' )
                     <small>{{ $message }}</small>
                 @enderror
             </div>            
             <div class="form-group" style="margin-left: 10px; margin-right: 10px;">
                 <label for="exampleInputEmail1">Full Name</label>
-                <input type="text" name="nama_lengkap" value="{{ $d->nama_lengkap }}" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Just enter Number">
+                <input type="text" name="nama_lengkap" value="{{ $d->nama_lengkap }}" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Full Name">
                 @error( 'nama_lengkap' )
                     <small>{{ $message }}</small>
                 @enderror
             </div>                
-              
+
             <div class="row mb-3" style="margin-left: 10px; margin-right: 10px;">
                 <div class="col">
                     <label for="exampleInputEmail1">Birthplace</label>
-                    <input type="text" name="tempat_lahir" value="{{ $d->tempat_lahir }}" class="form-control" placeholder="Tempat Lahir">
+                    <input type="text" name="tempat_lahir" value="{{ $d->tempat_lahir }}" class="form-control" placeholder="Birthplace">
                     @error( 'tempat_lahir' )
                         <small>{{ $message }}</small>
                     @enderror
                 </div>
                 <div class="col">
                     <label for="exampleInputEmail1">Birth date</label>
-                    <input type="date" name="tanggal_lahir" value="{{ $d->tanggal_lahir }}" class="form-control" placeholder="Tanggal Lahir">
+                    <input type="date" name="tanggal_lahir" value="{{ $d->tanggal_lahir }}" class="form-control" placeholder="Birth date">
                     @error( 'tanggal_lahir' )
                         <small>{{ $message }}</small>
                     @enderror
@@ -219,7 +218,7 @@
             </div>             
             <div class="form-group" style="margin-left: 10px; margin-right: 10px;">
                 <label for="exampleInputEmail1">Address</label>
-                <input type="text" name="alamat" value="{{ $d->alamat }}" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Cukup masukkan Angka saja">
+                <input type="text" name="alamat" value="{{ $d->alamat }}" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Address">
                 @error( 'alamat' )
                     <small>{{ $message }}</small>
                 @enderror
@@ -228,11 +227,11 @@
                 <label for="exampleFormControlSelect1">Religion</label>
                 <select class="form-control custom-select" name="agama" value="{{ $d->agama }}" id="exampleFormControlSelect1">
                     <option>Islam</option>
-                    <option>Christ</option>
+                    <option>Christian</option>
                     <option>Catholic</option>
                     <option>Hindu</option>
-                    <option>Buddha</option>
-                    <option>Khongucu</option>
+                    <option>Buddhist</option>
+                    <option>Confucian</option>
                     <option>None</option>
                 </select>
                 @error( 'agama' )
@@ -242,7 +241,7 @@
                 
             <div class="form-group" style="margin-left: 10px; margin-right: 10px;">
                 <label for="exampleInputEmail1">No. Telephone</label>
-                <input type="text" name="nomor_telepon" value="{{ $d->nomor_telepon }}" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Cukup masukkan Angka saja">
+                <input type="text" name="nomor_telepon" value="{{ $d->nomor_telepon }}" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter No. Telephone">
                 @error( 'nomor_telepon' )
                     <small>{{ $message }}</small>
                 @enderror
@@ -251,10 +250,10 @@
             <div class="form-group" style="margin-left: 10px; margin-right: 10px;">
                 <label for="exampleFormControlSelect1">Status</label>
                 <select class="form-control custom-select" name="status" value="{{ $d->status }}" id="exampleFormControlSelect1">
-                    <option>Belum Kawin</option>
-                    <option>Kawin</option>
-                    <option>Cerai Hidup</option>
-                    <option>Cerai</option>
+                    <option>Single</option>
+                    <option>Married</option>
+                    <option>Divorce</option>
+                    <option>Dead Divorce</option>
                 </select>
                 @error( 'status' )
                     <small>{{ $message }}</small>
@@ -262,26 +261,26 @@
             </div>               
             <div class="form-group" style="margin-left: 10px; margin-right: 10px;">
                 <label for="exampleInputEmail1">Job</label>
-                <input type="text" name="pekerjaan" value="{{ $d->pekerjaan }}" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Cukup masukkan Angka saja">
+                <input type="text" name="pekerjaan" value="{{ $d->pekerjaan }}" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Job">
                 @error( 'pekerjaan' )
                     <small>{{ $message }}</small>
                 @enderror
             </div>               
             <div class="form-group" style="margin-left: 10px; margin-right: 10px;">
                 <label for="exampleInputEmail1">Nationality</label>
-                <input type="text" name="kewarganegaraan" value="{{ $d->kewarganegaraan }}" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Cukup masukkan Angka saja">
+                <input type="text" name="kewarganegaraan" value="{{ $d->kewarganegaraan }}" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Nationality">
                 @error( 'kewarganegaraan' )
                     <small>{{ $message }}</small>
                 @enderror
             </div>               
             <div class="form-group" style="margin-left: 10px; margin-right: 10px;">
-                <label for="exampleInputEmail1">domisili</label>
-                <input type="text" name="domisili" value="{{ $d->domisili }}" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Cukup masukkan Angka saja">
+                <label for="exampleInputEmail1">Domicile</label>
+                <input type="text" name="domisili" value="{{ $d->domisili }}" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Domicile">
                 @error( 'domisili' )
                     <small>{{ $message }}</small>
                 @enderror
             </div>               
-                         
+
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
     </div>

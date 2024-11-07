@@ -7,6 +7,11 @@ use Illuminate\Pagination\Paginator;
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\ServiceProvider;
 
+use Illuminate\Support\Facades\View;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Auth;
+
+
 class AppServiceProvider extends ServiceProvider
 {
     /**
@@ -35,5 +40,20 @@ class AppServiceProvider extends ServiceProvider
             return $user->role === 'citizen';
         });
         Paginator::useBootstrap();
+
+        // View::composer('*', function ($view) {
+        //     $unreadEventCount = 0;
+
+        //     if (Auth::check()) {
+        //         $unreadEventCount = DB::table('user_event_notifications')
+        //             ->where('user_id', Auth::id())
+        //             ->where('is_read', false)
+        //             ->count();
+        //     }
+
+        //     $view->with('unreadEventCount', $unreadEventCount);
+        // });
+
+
     }
 }

@@ -74,6 +74,7 @@ route::delete('/Acara/delete_acara/{id}', [AcaraController::class, 'delete_acara
 Route::post('/acara/{id}/ikuti', [AcaraController::class, 'storeIkutiAcara'])->name('acara.ikuti')->middleware('auth');
 Route::get('/acara/{id}/participants', [AcaraController::class, 'showParticipants'])->name('acara.participants')->middleware('not.warga');
 Route::post('/acara/batal/{id}', [AcaraController::class, 'batal_ikut'])->name('acara.batal');
+// Route::post('/notifications/mark-as-read', [AcaraController::class, 'markNotificationsAsRead'])->name('notifications.markAsRead');
 
 
 // UMKM

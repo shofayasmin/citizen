@@ -46,10 +46,21 @@
         <div class="row">
             <div class="col-xl">
                 <div class="container">
-                    
                     <div class="row">
-
-                        
+                        <div class="col-md-12">
+                            <div class="page-title">
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb breadcrumb-separator-1">
+                                        <li class="breadcrumb-item active"><a href="{{ route('dashboard.index') }}">Dashboard</a></li>
+                                        <li class="breadcrumb-item"><a href="#">Report</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">View</li>
+                                    </ol>
+                                </nav>
+                                <h3>View Report</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
                         @foreach ($data as $key => $d)
                             <div class="col-10">
                                 <div class="card">
@@ -59,7 +70,7 @@
                                     <div class="card-header d-flex justify-content-between align-items-center">
                                         <h3 class="mt-3">{{ $d->judul }}</h3>
                                         @if(auth()->check() && in_array(auth()->user()->role, $allowedRoles))
-                                            <img src="{{ asset('storage/photo-acara/comment1.png') }}" width="25" data-toggle="modal" data-target="#comment_{{ $d->laporan_id }}" class="ml-auto">
+                                            <img src="{{ asset('../../storage/photo-acara/comment1.png') }}" width="25" data-toggle="modal" data-target="#comment_{{ $d->laporan_id }}" class="ml-auto">
                                         @endif
                                         
                                         @if(auth()->check() && auth()->user()->role == 'rw')
@@ -79,10 +90,10 @@
                                         <a href="#" class="badge badge-primary" data-toggle="modal" data-target="#Read_More_{{ $d->laporan_id }}">Read More</a>
                                         <div class="text-right">
                                             @canany(['rw', 'rt', 'sekretaris'])
-                                                <a href="#" class="badge {{ $d->status == 'Belum Selesai' ? 'badge-danger' : 'badge-success' }} status-toggle" data-id="{{ $d->laporan_id }}">{{ $d->status }}</a>
+                                                <a href="#" class="badge {{ $d->status == 'In Progress' ? 'badge-danger' : 'badge-success' }} status-toggle" data-id="{{ $d->laporan_id }}">{{ $d->status }}</a>
                                             @endcanany
                                             @can('citizen')
-                                                <span class="badge {{ $d->status == 'Belum Selesai' ? 'badge-danger' : 'badge-success' }}">{{ $d->status }}</span>
+                                                <span class="badge {{ $d->status == 'In Progress' ? 'badge-danger' : 'badge-success' }}">{{ $d->status }}</span>
                                             @endcan
                                         </div>
                                     </div>
@@ -109,7 +120,7 @@
                                     event.preventDefault(); // Mencegah tindakan default tautan
                                     var $this = $(this);
                                     var laporanId = $this.data('id');
-                                    var newStatus = $this.hasClass('badge-danger') ? 'Selesai' : 'Belum Selesai';
+                                    var newStatus = $this.hasClass('badge-danger') ? 'Finished' : 'In Progress';
                                     
                                     $.ajax({
                                         url: '{{ route('laporan.updateStatus') }}',
@@ -123,10 +134,10 @@
                                             if (response.success) {
                                                 if ($this.hasClass('badge-danger')) {
                                                     $this.removeClass('badge-danger').addClass('badge-success');
-                                                    $this.text('Selesai');
+                                                    $this.text('Finished');
                                                 } else {
                                                     $this.removeClass('badge-success').addClass('badge-danger');
-                                                    $this.text('Belum Selesai');
+                                                    $this.text('In Progress');
                                                 }
                                             } else {
                                                 alert('Failed to update status');

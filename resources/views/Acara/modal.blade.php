@@ -38,17 +38,17 @@
         <div class="modal-body">
             <div class="form-group">
             <label for="judul">Event Title</label>
-            <input type="text" class="form-control" id="judul" name="judul" placeholder="Masukkan Judul Acara">
+            <input type="text" class="form-control" id="judul" name="judul" placeholder="Enter Event Title">
             </div>
             <div class="form-group">
             <label for="deskripsi">Description</label>
-            <textarea class="form-control" id="deskripsi" name="deskripsi" rows="3" placeholder="Masukkan Deskripsi Acara"></textarea>
+            <textarea class="form-control" id="deskripsi" name="deskripsi" rows="3" placeholder="Enter Event Description"></textarea>
             </div>
             <div class="form-group">
             <label for="tipe_acara">Event Type</label>
             <select class="form-control" id="tipe_acara" name="tipe_acara">
-                <option value="Kegiatan">Activity</option>
-                <option value="Informasi">Information</option>
+                <option value="Activity">Activity</option>
+                <option value="Information">Information</option>
             </select>
             </div>
             <div class="form-group">
@@ -130,7 +130,7 @@
                 </div>
                 <div class="modal-body mb-4">
                     <p>{{ $d->deskripsi }}</p>
-                    @if($d->tipe_acara != 'Informasi')
+                    @if($d->tipe_acara != 'Information')
                         @if(in_array($d->id_acara, $userParticipations))
                             <form action="{{ route('acara.batal', $d->id_acara) }}" method="POST">
                                 @csrf
